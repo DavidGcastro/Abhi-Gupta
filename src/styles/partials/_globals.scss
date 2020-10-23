@@ -2,6 +2,11 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background: $main-black;
+  color:white;
+  font-family: Futura PT;
+  font-weight: 200;
+
 }
 
 * {
@@ -12,4 +17,17 @@ body {
 input {
   -webkit-appearance: none;
   box-shadow: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+span {
+  display: block;
+  width: 300px;
+  text-align: center;
+  line-height: 1.33;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }

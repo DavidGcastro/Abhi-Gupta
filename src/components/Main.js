@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = () => {
 	return (
-		<div></div>
+		<span>WE DESIGN BUSINESS EVOLUTION THROUGH DATA, TECHNOLOGY & CREATIVITY</span>
 	);
 };
 

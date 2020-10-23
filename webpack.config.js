@@ -1,45 +1,36 @@
-const webpack = require('webpack');
 const path = require('path');
-const SRC_DIR = path.resolve(__dirname, 'client');
-const DIST_DIR = path.resolve(__dirname, 'public');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+module.exports = {
+	mode: 'development',
+	plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin({template: path.resolve('./src/index.html')})],
 
-const config = {
-  entry: ['babel-polyfill', SRC_DIR + '/index.js'],
-  output: {
-    path: DIST_DIR,
-    filename: 'bundle.js'
-  },
-  devServer: {
-    contentBase: './public',
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000/',
-        secure: false
-      }
-    }
-  },
-  mode: 'development',
-  module: {
-    rules: [
-      {
-        test: /js?$/,
-        include: path.resolve(__dirname, './client'),
-        loader: 'babel-loader',
-        query: {
-          presets: ['env', 'stage-2', 'react']
-        }
-      },
-      // use the style-loader/css-loader combos for anything matching the .css extension
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }
-    ]
-  }
+	module: {
+		rules: [{
+			test: /\.(js|jsx)$/,
+			include: [path.resolve(__dirname, 'src')],
+			loader: 'babel-loader'
+		}, {
+			test: /.(scss|css)$/,
+			use: [{
+				loader: 'style-loader'
+			}, {
+				loader: 'css-loader',
+				options: {
+					sourceMap: false
+				}
+			}, {
+				loader: 'sass-loader',
+				options: {
+					sourceMap: false
+				}
+			},
+			{
+				loader: 'sass-loader',
+				options: {
+					sourceMap: false
+				}
+			}]
+		}]
+	},
 };
-
-module.exports = config;

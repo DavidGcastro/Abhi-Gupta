@@ -1,8 +1,14 @@
-import React from 'react';
+import React from 'React';
+import MainHeader from './mainHeader/index.js';
+import Experience from './experience/index';
 
 const Main = () => {
 	return (
-		<span>WE DESIGN BUSINESS EVOLUTION THROUGH DATA, TECHNOLOGY & CREATIVITY</span>
+		<div className='main-parent'>
+			<MainHeader/>
+			<Experience/>
+		</div>
+		
 	);
 };
 

@@ -2,4 +2,7 @@
 @import './variables/colors.scss';
 @import './mixins/responsive.scss';
 @import './partials/fonts.scss';
-@import './partials/globals';
+@import './partials/_globals';
+@import './partials/_text';
+@import './partials/_main-header';
+@import './partials/_experience';

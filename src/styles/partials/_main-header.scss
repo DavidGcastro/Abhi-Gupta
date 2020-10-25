@@ -1,0 +1,17 @@
+.main-header{
+    @include parent;
+    background: $main-black;  
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+}
+
+.centerText-parent{
+    @include xs{
+        justify-content: space-around;
+    }
+    @include parent;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

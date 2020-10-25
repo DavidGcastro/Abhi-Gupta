@@ -1,0 +1,25 @@
+.experience-parent {
+    @include parent;
+    background: white;
+    color: black;
+    min-height: 100%;
+    justify-content: center;
+}
+
+.experience-menu{
+    @include parent;
+    justify-content: center;
+    @include md {
+        max-width: 33%;
+    }
+}
+
+.experience-menu-item {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 2px;
+    &::after {
+     @include underline
+    }   
+}

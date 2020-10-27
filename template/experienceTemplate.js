@@ -1,3 +1,3 @@
 export default {
-	categories: ['Work Experience', 'Research projects']
+	categories: ['Experience', 'publications', 'recent projects']
 };

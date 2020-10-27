@@ -1,15 +1,14 @@
 html,
 body {
   height: 100%;
-  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   color:white;
   font-family: Futura PT;
-  margin: 0;
   padding:0;
   overflow-x: hidden; 
   background: $main-black;
 }
-
 #root {
   height: 100%;
   width: 100%;
@@ -28,10 +27,6 @@ input {
   box-sizing: border-box;
 }
 
-.padder {
-  padding: 12px;
-}
-
 .main-parent{
   height: 100%;
   display: flex;
@@ -46,7 +41,17 @@ input {
     @include md{
        padding: 20px;
    }
-   @include lg {
-     padding: 40px;
+
+   @include lg{
+     padding: 25px;
    }
+
+   @include xl {
+     padding: 35px;
+   }
+}
+
+.center-content{
+  max-width: 800px;
+
 }

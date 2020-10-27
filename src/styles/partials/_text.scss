@@ -1,18 +1,40 @@
+.large-text {
+    font-size: 75px;
+}
+
 .h1{
    @include xs{
        font-size: 20px;
    }
    @include lg{
        font-size: 2.75vw;
+   }
+   @include xl{
+       font-size: 35px;
    } 
 }
 
-
 .p {
-    @include xs{
+    @include xs {
         font-size: 10px;
     }
-   font-size: 1vw;
+    @include md {
+        font-size: 15px;
+    }
+    @include xl{
+        font-size: 20px;
+    }
+
+}
+a {
+  @extend .p;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 150ms ease;
+  color: $main-black;
+  &:hover {
+    color: $hopper-pink;
+  }
 }
 
 .uppercase{
@@ -26,4 +48,14 @@
 
 .light {
     font-weight: 200 !important;
+}
+
+.flexer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexer-row {
+     display: flex;
+    flex-direction: row;
 }

@@ -4,14 +4,14 @@
     flex-direction: column;
     min-height: 100%;
     position: relative;
+    left: 0;
+    right: 0;
 }
 
 .centerText-parent{
-    @include xs{
-        justify-content: space-around;
-    }
     @include parent;
+    @extend .h1;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
+

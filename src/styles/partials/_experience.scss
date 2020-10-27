@@ -3,23 +3,25 @@
     background: white;
     color: black;
     min-height: 100%;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
 }
 
-.experience-menu{
-    @include parent;
-    justify-content: center;
-    @include md {
-        max-width: 33%;
-    }
-}
-
-.experience-menu-item {
-    width: 100%;
+.experience-tabs-item {
     text-align: center;
     display: inline-block;
-    margin: 0 2px;
+    margin: 0 5px;
     &::after {
-     @include underline
+     @include underline;
+     min-width: 145px;
     }   
+    a {
+        padding: 0 20px;
+    }
+}
+.experience-scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex: 1;
+    width:  100%;
 }

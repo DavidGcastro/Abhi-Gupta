@@ -1,0 +1,42 @@
+.about-parent {
+    @include sm{
+        text-align: center;
+    }
+    @include parent;
+    @include md {
+        text-align: left;
+    }
+    color: black;
+    background: white;
+    min-height: 500px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+.about-header {
+    display: block;
+}
+
+.about-content {
+    @include xs{
+        text-align: center;
+    }
+    @include md {
+        text-align: left;
+    }
+    flex: 1;
+    padding: 0 50px;
+    justify-content: space-evenly;
+  
+}
+
+.about-img {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}

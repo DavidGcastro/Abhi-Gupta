@@ -1,11 +1,16 @@
 .large-text {
+    @include sm {
+        font-size: 50px;
+    }
+    @include md {
+        font-size: 60px;
+
+    }
     font-size: 75px;
 }
 
 .h1{
-   @include xs{
-       font-size: 20px;
-   }
+   font-size: 20px;
    @include lg{
        font-size: 2.75vw;
    }
@@ -15,11 +20,13 @@
 }
 
 .p {
+    line-height: 15px;
     @include xs {
         font-size: 10px;
     }
     @include md {
         font-size: 15px;
+        line-height: 25px;
     }
     @include xl{
         font-size: 20px;
@@ -27,8 +34,6 @@
 
 }
 a {
-  @extend .p;
-  font-weight: 500;
   text-decoration: none;
   transition: all 150ms ease;
   color: $main-black;

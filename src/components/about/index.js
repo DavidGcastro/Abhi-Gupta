@@ -5,7 +5,7 @@ const About = () => {
 	return (
 		<div className='about-parent padder'>
 			<div className='about-img'></div>
-			<div className='about-content center-content flexer-col'>
+			<div className='about-content center-content-width'>
 				<span className='large-text about-header'>{template.header}</span>
 				<span className='p about-body'>{template.text}</span>
 			</div>

@@ -7,8 +7,8 @@ import Particles from 'react-tsparticles';
 
 const MainHeader = () => {
 	return (
-		<div className='main-header'>
-			<Particles style= {{position: 'absolute'}}options={particlesConfig} />				
+		<div className='main-header padder'>
+			<Particles style= {{position: 'absolute', left: 0, right: 0}}options={particlesConfig} />				
 			<Header name={template.name}/>
 			<CenterText strings={template.typedStrings}/>
 		</div>

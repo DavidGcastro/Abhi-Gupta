@@ -1,4 +1,5 @@
 
+import { object } from 'prop-types';
 import React from 'React';
 import {Component} from 'React';
 import template from '../../../template/experienceTemplate';
@@ -13,7 +14,7 @@ class Experience extends Component {
 	}
 	render() {
 		return <div className='experience-parent padder'>
-			<ExperienceTabs categories={template.categories}/>
+			<ExperienceTabs categories={Object.keys(template)}/>
 			<div className='experience-scroll padder' onScroll={this.handleOnScoll}>
 			</div>
 		</div>;

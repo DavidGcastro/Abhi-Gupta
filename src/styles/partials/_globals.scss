@@ -9,6 +9,8 @@ body {
   overflow-x: hidden; 
   background: $main-black;
 }
+
+
 #root {
   height: 100%;
   width: 100%;
@@ -16,6 +18,8 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
 }
 
 input {
@@ -23,9 +27,6 @@ input {
   box-shadow: none;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 .main-parent{
   height: 100%;
@@ -34,14 +35,15 @@ input {
   justify-content: space-between;
 }
 
-.padder {
-  @include xs{
-       padding: 12px;
-   }
-    @include md{
-       padding: 20px;
-   }
+.center-content-width{
+  @include sm{
+    width: 100%;
+  }
+  max-width: 800px;
+}
 
+.padder {
+   padding: 20px;
    @include lg{
      padding: 25px;
    }
@@ -49,9 +51,4 @@ input {
    @include xl {
      padding: 35px;
    }
-}
-
-.center-content{
-  max-width: 800px;
-
 }

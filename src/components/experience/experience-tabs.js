@@ -1,7 +1,8 @@
 
 import React from 'React';
-const ExperienceTabs = (template) => {
-	const categories = template.categories;
+import PropTypes from 'prop-types';  
+
+const ExperienceTabs = ({categories}) => {
 	return (<div className='experience-tabs'>
 		{	
 			categories.map((category, i) => {
@@ -14,6 +15,10 @@ const ExperienceTabs = (template) => {
 		}
 	</div>
 	);
+};
+
+ExperienceTabs.propTypes = {  
+	categories: PropTypes.array
 };
 
 export default ExperienceTabs;

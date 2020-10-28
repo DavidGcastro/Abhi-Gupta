@@ -1,19 +1,21 @@
 .about-parent {
-    @include sm{
-        text-align: center;
-    }
-    @include parent;
-    @include md {
-        text-align: left;
-    }
     color: black;
     background: white;
-    min-height: 500px;
-    flex-direction: row;
     align-content: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include parent;
+    @include lg {
+        min-height: 500px;
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
 }
 
 
@@ -30,7 +32,6 @@
         text-align: left;
     }
     flex: 1;
-    padding: 0 50px;
     justify-content: space-evenly;
   
 }

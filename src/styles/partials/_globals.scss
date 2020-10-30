@@ -39,13 +39,13 @@ input {
   @include sm{
     width: 100%;
   }
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .padder {
    padding: 20px;
    @include lg{
-     padding: 25px;
+     padding: 30px;
    }
 
    @include xl {

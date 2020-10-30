@@ -2,9 +2,10 @@
     @include parent;
     background: white;
     color: black;
-    min-height: 800px;
+    min-height: $min-height;
     flex-direction: column;
     align-items: center; 
+    align-content: center;
 }
 
 .experience-tabs-item {
@@ -20,6 +21,8 @@
     }
 }
 .experience-scroll {
+    width: 100%;
+    overflow-y: hidden;
     display: flex;
     overflow-x: scroll;
     flex:1;
@@ -32,12 +35,13 @@
 
 
 .experience-module {
+    align-items: center;
     align-content: center;
     display: flex;
     flex-direction: column;
     flex: none;
-     width: 100%;
-     justify-content: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .rotate{

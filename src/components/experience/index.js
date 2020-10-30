@@ -16,17 +16,19 @@ class Experience extends Component {
 	render() {
 		return <div className='experience-parent padder'>
 			<ExperienceTabs categories={Object.keys(template)}/>
-			<div className='experience-scroll padder' onScroll={this.handleOnScoll}>
+			<div className='experience-scroll' onScroll={this.handleOnScoll}>
 				{Object.keys(template).map((section, i) => {
 					const currCategory = template[section];
 					return (
 						currCategory.modules.map(function(module,i){
 							return (
-								<div key={i} className='experience-module'>
-									<span className='p bold uppercase'>{module.date.start} – {module.date.end}</span>
-									<span className='large-text bold uppercase'>{module.title}</span>
-									<span className='h1' style={{display:'block'}}>{module.organization}</span>
-									<span className="p center-content-width">{module.description}</span>		
+								<div key={i} className='experience-module padder'>
+									<div className='center-content-width'>
+										<span className='p bold uppercase hopper-pink'>{module.date.start} – {module.date.end}</span>
+										<span className='large-text bold uppercase'>{module.title}</span>
+										<span className='h1' style={{display:'block'}}>{module.organization}</span>
+										<span className="p">{module.description}</span>	
+									</div>	
 								</div>
 							)
 							;

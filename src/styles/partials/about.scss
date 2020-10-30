@@ -2,18 +2,16 @@
     color: black;
     background: white;
     align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    min-height: $min-height;
     @include parent;
     @include lg {
-        min-height: 500px;
+        min-height: $min-height;
         text-align: left;
         flex-direction: row;
-        justify-content: space-evenly;
     }
 
 }
@@ -25,7 +23,6 @@
     @include md {
         text-align: left;
     }
-    flex: 1;
     justify-content: space-evenly;
   
 }

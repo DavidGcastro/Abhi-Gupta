@@ -36,25 +36,17 @@ export default {
 					end: 'september 2019'
 				},
 				organization: 'facebook reality labs',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam. Etiam lobortis eu dui sit amet pretium. Aliquam erat volutpat. Sed dignissim arcu porttitor purus porta venenatis. Suspendisse fringilla justo vel orci posuere interdum. Nam nec est luctus, ullamcorper ex sed, dignissim risus.',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam. Etiam lobortis eu dui sit amet pretium. Aliquam erat volutpat. Sed dignissim arcu porttitor purus porta venenatis. Suspendisse fringilla justo vel orci posuere interdum. Nam nec est luctus, ullamcorper ex sed, dignissim risusLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam.',
 				title: 'ctrl-labs'
 			},
 		]
 	},
-	// 'recent projects': {
-	// 	mainDescription: '',
-	// 	modules: [{
-	// 		date: '',
-	// 		description: '',
-	// 		title: ''
-	// 	}]
-	// },
-	// publications: {
-	// 	mainDescription: '',
-	// 	modules: [{
-	// 		date: '',
-	// 		description: '',
-	// 		title: ''
-	// 	}]
-	// }
+	'recent projects': {
+		mainDescription: '',
+		modules: []
+	},
+	publications: {
+		mainDescription: '',
+		modules: []
+	}
 };

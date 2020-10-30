@@ -1,5 +1,6 @@
 .large-text {
     display: block;
+    font-size: 10vw;
     @include sm {
         font-size: 50px;
     }
@@ -82,3 +83,6 @@ a {
     bottom: 0;
 }
 
+.hopper-pink{
+    color: $hopper-pink !important;
+}

@@ -1,17 +1,6 @@
 .large-text {
     display: block;
-    font-size: 10vw;
-    @include sm {
-        font-size: 50px;
-    }
-    @include md {
-        font-size: 60px;
-
-    }
-
-    @include lg {
-        font-size: 75px;
-    }
+    font-size: 45px;
 }
 
 .h1{
@@ -24,15 +13,25 @@
    } 
 }
 
+.h2{
+   font-size: 18px;
+   @include lg{
+       font-size: 1.75vw;
+   }
+   @include xl{
+       font-size: 25px;
+   } 
+}
+
+
 .p {
-    line-height: 15px;
-    @include xs {
-        font-size: 10px;
-    }
-    @include md {
-        font-size: 15px;
-        line-height: 25px;
-    }
+    line-height: 1.85em;
+    font-size: 15px;
+}
+
+.small {
+   line-height: 1.85em;
+    font-size: 12px; 
 }
 a {
   text-decoration: none;
@@ -52,6 +51,10 @@ a {
   font-weight: bold !important;
 }
 
+.boldish {
+    font-weight: 500 !important;
+}
+
 .light {
     font-weight: 200 !important;
 }
@@ -67,18 +70,35 @@ a {
 }
 
 
-.hover-effect {
-    height: 25px;
-    content: "";
-    position: absolute;
-    background-color: $hopper-pink;
-    opacity: .5;
-    z-index: -1;
-    width: 100%;
-    left: 10px;
-    bottom: 0;
-}
-
 .hopper-pink{
     color: $hopper-pink !important;
+}
+
+.letter-spacer {
+    letter-spacing: 5px;
+}
+
+.black {
+    color: $black;
+}
+
+.grey {
+    color: $text-grey;
+}
+
+.white {
+    color: white !important;
+}
+
+.big-letter {
+    font-size: 25px;
+    letter-spacing: .1px;
+}
+
+.indent{
+    margin-left: 20px;
+}
+
+.textCenter {
+    text-align: center!important;
 }

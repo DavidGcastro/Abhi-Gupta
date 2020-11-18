@@ -1,12 +1,12 @@
 export default {
-	experience: {
+	work: {
 		modules: [
 			{
 				date: {
 					start: 'june 2020',
 					end: 'december 2020'
 				},
-				organization: 'shipra agrawal',
+				management: 'shipra agrawal',
 				keywords: [],
 				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam. Etiam lobortis eu dui sit amet pretium. Aliquam erat volutpat. Sed dignissim arcu porttitor purus porta venenatis. Suspendisse fringilla justo vel orci posuere interdum. Nam nec est luctus, ullamcorper ex sed, dignissim risus.',
 				title: 'agrawal research group'
@@ -16,8 +16,8 @@ export default {
 					start: 'january 2020',
 					end: 'september 2020'
 				},
-				organization: 'hod lipson',
-				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam. Etiam lobortis eu dui sit amet pretium. Aliquam erat volutpat. Sed dignissim arcu porttitor purus porta venenatis. Suspendisse fringilla justo vel orci posuere interdum. Nam nec est luctus, ullamcorper ex sed, dignissim risus.',
+				management: 'hod lipson',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam. Etiam lobortis eu dui sit amet pretium. Aliquam erat volutpat. Sed dignissim arcu porttitor purus porta venenatis. Suspendisse fringilla justo vel orci posuere interdum. Nam nec est luctus, ullamcorper ex sed, dignissim risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam. Etiam lobortis eu dui sit amet pretium. Aliquam erat volutpat. Sed dignissim arcu porttitor purus porta venenatis. Suspendisse fringilla justo vel orci posuere interdum. Nam nec est luctus, ullamcorper ex sed, dignissim risus',
 				title: 'creative machines lab'
 			},
 			{
@@ -25,7 +25,7 @@ export default {
 					start: 'may 2018',
 					end: 'may 2020'
 				},
-				organization: 'peter allen',
+				management: 'peter allen',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam. Etiam lobortis eu dui sit amet pretium. Aliquam erat volutpat. Sed dignissim arcu porttitor purus porta venenatis. Suspendisse fringilla justo vel orci posuere interdum. Nam nec est luctus, ullamcorper ex sed, dignissim risus.',
 				title: 'colombia robotics lab'
 			},
@@ -34,7 +34,7 @@ export default {
 					start: 'may 2019',
 					end: 'september 2019'
 				},
-				organization: 'facebook reality labs',
+				management: 'facebook reality labs',
 				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam. Etiam lobortis eu dui sit amet pretium. Aliquam erat volutpat. Sed dignissim arcu porttitor purus porta venenatis. Suspendisse fringilla justo vel orci posuere interdum. Nam nec est luctus, ullamcorper ex sed, dignissim risusLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, bibendum sed maximus ut, fermentum eget quam.',
 				title: 'ctrl-labs'
 			},

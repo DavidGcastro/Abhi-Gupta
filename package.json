@@ -1,7 +1,7 @@
 {
   "name": "my-webpack-project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "entry.js",
   "scripts": {
     "dev": "webpack --mode development",
     "watch": "webpack --watch",
@@ -12,26 +12,22 @@
   "license": "ISC",
   "dependencies": {
     "@babel/preset-react": "^7.12.1",
-    "axios": "^0.20.0",
+    "animate.css": "^4.1.1",
     "body-parser": "^1.19.0",
     "chalk": "^4.1.0",
     "i": "^0.3.6",
-    "lodash": "^4.17.20",
     "npm": "^6.14.8",
     "prop-types": "^15.7.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-hamburger-button": "0.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scroll-horizontal": "^1.6.6",
-    "react-thunk": "^1.0.0",
     "react-tsparticles": "^1.18.7",
     "react-visibility-sensor": "^5.1.1",
     "reactstrap": "^8.6.0",
     "redux": "^4.0.5",
-    "textillate": "^0.4.1",
+    "text-to-svg": "^3.1.5",
     "typed.js": "^2.0.11",
-    "volleyball": "^1.5.1"
+    "vivus": "^0.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",

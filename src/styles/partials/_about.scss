@@ -1,0 +1,47 @@
+.about-img {
+   width: 200px;
+}
+
+.text-blurb {
+   @include md {
+      text-align: right; 
+      shape-outside: url('../../../assets/images/avatar.jpeg');
+   }  
+}
+
+.text-columns {
+   @include parent;
+}
+
+.column {
+ min-width: 100%;
+ padding: 20px;  
+ @include md{
+   min-width: 250px;
+}
+}
+
+.icon {
+   max-height: 90px;
+   margin: 25px;
+   @include md {
+      max-height: 75px;
+      margin: 10px;
+   }
+    padding: 10px;
+    width: auto;
+}
+
+.icons-parent {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex:1;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.header::after {
+   margin-bottom: 50px;
+   @include underline;
+}

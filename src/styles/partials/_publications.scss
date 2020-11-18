@@ -1,0 +1,42 @@
+.publications-parent {
+    display: flex;
+    width: 100%;
+    flex:1;
+    flex-wrap: wrap;
+    align-items: inherit;
+}
+
+.publications-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex:2;
+  min-width: 600px;
+  justify-content: space-between;
+}
+.publications-left {
+   padding: 20px;
+   border-radius: 5%;
+   background: #1f1f1d;
+   min-width: 300px;
+   min-height: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   flex:1;
+
+   span {
+       margin-top: 20px;
+   }
+}
+.pubTab {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 225px;
+    margin-top: 45px;
+    @include md{
+        margin: 45px;
+    }
+}

@@ -1,38 +1,31 @@
-import React from 'React';
-import {Component} from 'React';
-import MainHeader from './mainHeader/index.js';
-import About from './about/index';
-import isInViewport from '../utils/inViewport';
-let allDivs = document.getElementsByTagName('div');
+import React, {Component} from 'react';
+import 'animate.css';
+import About from './About';
+import Experience from '../components/Experience';
+import Section from '../HOC/Section';
+import Header from './Header';
+import Publications from './Publications';
 class Main extends Component {
 	constructor(){
 		super();
-		this.handleScroll = this.handleScroll.bind(this);
-
 	}
-	componentDidMount() {}	
-	handleScroll() {
-		let initialDiv = document.getElementsByClassName('about-parent')[0];
-		let mainHeader = document.getElementsByClassName('main-header')[0];
-		if(isInViewport(initialDiv)){
-			for(let i = 0; i < allDivs.length; i++){
-				allDivs[i].setAttribute('style', `background: ${allDivs[i].getAttribute('data-color')} !important`);
-			
-			}
-		}
-		if(isInViewport(mainHeader)){
-			for(let i = 0; i < allDivs.length; i++){
-				allDivs[i].setAttribute('style', 'background: initial !important; color: white');
-			}
-		}
-	}
+	
 	render(){
 		return (
 			<div className='main-parent'>
-				<MainHeader/>
-				<About />
-			</div>
-		
+				<Header/>
+				<div id='global-wrapper'>
+					<Section>
+						<About/>
+					</Section>
+					<Section>
+						<Experience/>
+					</Section>
+					<Section>
+						<Publications/>
+					</Section>
+				</div>
+			</div>	
 		);
 	}
 

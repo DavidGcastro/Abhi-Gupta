@@ -1,17 +1,17 @@
 .experience-parent {
-    @include parent;
+    // @include parent;
     background: white;
     color: black;
     min-height: $min-height;
-    flex-direction: column;
-    align-items: center; 
-    align-content: center;
+//     flex-direction: column;
+//     align-items: center; 
+//     align-content: center;
 }
 
 .experience-tabs-item {
     text-align: center;
     display: inline-block;
-    margin: 0 5px;
+    margin: 10px 5px;
     &::after {
      @include underline;
      min-width: 145px;
@@ -20,28 +20,23 @@
         padding: 0 20px;
     }
 }
+
+.experience-module_parent {
+    width: 100%
+}
 .experience-scroll {
     width: 100%;
-    overflow-y: hidden;
-    display: flex;
-    overflow-x: scroll;
-    flex:1;
-
+    height: 100%;
+    transition: transform .2s ease-out;
 }
 
 .experience-tabs {
     text-align: center;
 }
 
-
 .experience-module {
-    align-items: center;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    flex: none;
+    float: left;
     width: 100%;
-    justify-content: center;
 }
 
 .rotate{

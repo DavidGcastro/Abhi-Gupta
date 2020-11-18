@@ -6,10 +6,15 @@ body {
   color:white;
   font-family: Futura PT;
   padding:0;
-  overflow-x: hidden; 
   background: $main-black;
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {}
 
 #root {
   height: 100%;
@@ -19,7 +24,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background 0.5s ease;
 
+}
+
+.fixed {
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 input {
@@ -43,7 +57,7 @@ input {
 }
 
 .padder {
-   padding: 20px;
+   padding: 25px;
    @include lg{
      padding: 30px;
    }
@@ -51,4 +65,12 @@ input {
    @include xl {
      padding: 35px;
    }
+}
+
+.spacer {
+  margin-top: 5px;
+  @include md {
+ margin-top: 15px;
+}
+  display: block;
 }

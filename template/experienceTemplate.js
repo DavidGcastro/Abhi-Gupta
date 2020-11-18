@@ -1,6 +1,5 @@
 export default {
 	experience: {
-		mainDescription: 'Academic research. software engineering. machine learning. web dev.',
 		modules: [
 			{
 				date: {
@@ -43,7 +42,9 @@ export default {
 	},
 	'recent projects': {
 		mainDescription: '',
-		modules: []
+		modules: [
+		
+		]
 	},
 	publications: {
 		mainDescription: '',

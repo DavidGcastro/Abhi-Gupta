@@ -1,14 +1,12 @@
 .about-parent {
     color: black;
-    background: white;
     align-content: center;
     justify-content: space-evenly;
-    flex-direction: column;
     text-align: center;
     align-items: center;
-    min-height: $min-height;
+    background: white;
     @include parent;
-    @include lg {
+    @include md {
         min-height: $min-height;
         text-align: left;
         flex-direction: row;
@@ -28,7 +26,6 @@
 }
 
 .about-img {
-    border: 1px solid black;
     width: 200px;
-    height: 200px;
+    height: auto;
 }

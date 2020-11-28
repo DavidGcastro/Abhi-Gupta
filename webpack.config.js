@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
+	entry: path.resolve(__dirname, 'src/entry.js'),
 	mode: 'development',
 	plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin({template: path.resolve('./src/index.html')})],
 	devServer: {
@@ -36,7 +37,7 @@ module.exports = {
 				}]
 			}, 
 			{
-				test: /\.(otf)?$/,
+				test: /\.(otf)$/,
 				use: [
 					{
 						loader: 'file-loader',

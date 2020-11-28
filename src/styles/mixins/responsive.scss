@@ -51,5 +51,31 @@
   width: 100%;
   background: #000;
   height: 2px;
-  margin-top: 4px;
+  margin-top: 40px;
 }
+
+@mixin background-diagonal {
+  background: white;
+  transform: rotate(-8deg);
+  height: 225px;
+  width: 120%;
+  z-index: 150;
+  position: relative;
+  left: 0;
+}
+
+@mixin viewportBiggerThanMinHeight {
+  @media (min-height: #{$min-height}) and (min-width: #{$screen-md-min} ){
+      min-height: 100%;
+  }
+}
+
+
+
+@mixin hover-effect($value){
+    transition: .5s cubic-bezier(.77,0,.175,1);
+    transform:.25s linear opacity;
+    transform: translateY($value);
+   }
+
+

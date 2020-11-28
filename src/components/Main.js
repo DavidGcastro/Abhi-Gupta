@@ -5,6 +5,7 @@ import Experience from '../components/Experience';
 import Section from '../HOC/Section';
 import Header from './Header';
 import Publications from './Publications';
+import Contact from './Contact';
 class Main extends Component {
 	constructor(){
 		super();
@@ -23,6 +24,9 @@ class Main extends Component {
 					</Section>
 					<Section>
 						<Publications/>
+					</Section>
+					<Section>
+						<Contact/>
 					</Section>
 				</div>
 			</div>	

@@ -1,7 +1,6 @@
 import React from 'react';
 import aboutTemplate from '../../template/aboutTemplate';
 import icon1 from '../../assets/icons/3.png';
-import icon2 from '../../assets/icons/4.png';
 import icon4 from '../../assets/icons/6.png';
 import icon6 from '../../assets/icons/8.png';
 const About = (props) => {

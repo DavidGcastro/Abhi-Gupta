@@ -76,7 +76,7 @@ class Experience extends Component {
 					</div>
 					<div className={`experience-detail-parent ${this.state.hideTabs ? 'animate__animated animate__fadeIn' : 'displayNone'}`}>
 						<div>
-							<img className='closeButton' onClick= {this.handleclose} src={closeButton}></img>
+							<img className='icon-clickable' onClick= {this.handleclose} src={closeButton}></img>
 						</div>
 						<div className='spacer'>
 							<div className = 'experience-detail-top'>

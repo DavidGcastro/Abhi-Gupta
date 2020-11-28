@@ -20,7 +20,7 @@ const colBuilder = (arr, i) => {
 };
 const Publications = (props) => {
 	return (
-		<div className='component-parent padder'>
+		<div className='component-parent padder' id={publicationsTemplate.title}>
 			<div className='component-wrapper'>
 				<span className={`large-text white uppercase letter-spacer header boldish flex-child${props.isViz ? 'animate__animated animate__fadeInDown  showElem' : 'hideElem'}`}>{publicationsTemplate.title}</span>
 				<div className='publications-parent'>

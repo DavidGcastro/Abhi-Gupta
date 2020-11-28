@@ -110,15 +110,19 @@ input {
   overflow: hidden;
 }
 
-.closeButton {
+.icon-clickable {
   width: 40px;
   height: auto;
   transition: all 200ms ease;
   cursor: pointer;
 }
 
-.closeButton:hover{
+.icon-clickable:hover{
   @include sm {
       width: 50px;
   }
+}
+
+.noMinHeight {
+  min-height: initial !important;
 }

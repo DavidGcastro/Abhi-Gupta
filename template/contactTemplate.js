@@ -1,12 +1,8 @@
 export default {
 	email: 'abhigupta@gmail.com',
-	github: {
-		link: ''
-	},
-	linkedIn : {
-		link: ''
-	},
-	twitter: {
-		link: ''
-	},
+	profiles: [
+		{github: 'https://github.com'}, 
+		{linkedin: 'https://linkedin.com'},
+		{twitter: 'https://twitter.com'}
+	]
 };

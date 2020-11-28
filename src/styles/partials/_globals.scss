@@ -111,8 +111,8 @@ input {
 }
 
 .icon-clickable {
-  width: 40px;
-  height: auto;
+  height: 40px;
+  width: auto !important;
   transition: all 200ms ease;
   cursor: pointer;
 }

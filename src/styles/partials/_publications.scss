@@ -3,22 +3,26 @@
     width: 100%;
     flex:1;
     flex-wrap: wrap;
-    align-items: inherit;
 }
 
 .publications-right {
   display: flex;
   flex-wrap: wrap;
-  flex:2;
+  justify-content: space-evenly;
+
+  @include md{
+    flex:2;
+  }
+  @include lg{
   min-width: 600px;
-  justify-content: space-between;
+
+  }
 }
 .publications-left {
    padding: 20px;
    border-radius: 5%;
    background: #1f1f1d;
-   min-width: 300px;
-   min-height: 400px;
+   min-width: 275px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -30,13 +34,62 @@
        margin-top: 20px;
    }
 }
+
+.publications-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.publications-left:hover {
+    @include sm {
+        .publications-highlight {
+            @include hover-effect(10%);
+        }
+        .pubTab-link { 
+            @include hover-effect(50%);
+            opacity: 0;
+        }  
+    }
+}
+
 .pubTab {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    max-width: 225px;
-    margin-top: 45px;
-    @include md{
-        margin: 45px;
+    margin: 20px;
+    justify-content: space-between;
+    @include md {
+        text-align: initial;
+        margin: 0;
+        max-width: 225px;
     }
 }
+
+
+.publicationsCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pubTab-top{
+    display: flex;
+    flex-direction: column;
+}
+
+// hover effect
+.pubTab:hover {
+    @include sm {
+    .pubTab-top {
+        @include hover-effect(10%);
+    }
+    .pubTab-link{ 
+        @include hover-effect(50%);
+         opacity: 0;
+     }   
+    }
+}
+    
+

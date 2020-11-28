@@ -15,11 +15,12 @@ body {
    width: 100%;
    height: 100%;
 }
-
+.smallerMinHeight {
+  min-height: 650px !important;
+}
 #global-wrapper {
   margin: 0 auto;
   max-width: 1200px;
-  // height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -95,7 +96,6 @@ input {
 }
 
 .component-parent{
-  //  background: $grey;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -118,5 +118,7 @@ input {
 }
 
 .closeButton:hover{
-  width: 50px;
+  @include sm {
+      width: 50px;
+  }
 }

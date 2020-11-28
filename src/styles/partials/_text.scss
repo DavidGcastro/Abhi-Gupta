@@ -1,6 +1,10 @@
 .large-text {
     display: block;
-    font-size: 45px;
+    font-size: 30px;
+    @include md {
+        font-size: 45px;
+
+    }
 }
 
 .h1{
@@ -35,11 +39,8 @@
 }
 a {
   text-decoration: none;
-  transition: all 150ms ease;
-  color: $main-black;
-  &:hover {
-    color: $hopper-pink;
-  }
+  display: block;
+  color: white;
 }
 
 .uppercase{

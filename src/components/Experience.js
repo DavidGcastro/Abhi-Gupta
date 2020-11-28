@@ -53,8 +53,8 @@ class Experience extends Component {
 	render(){
 		return (
 			<div className='component-parent padder' id={experienceHeaderText}>
-				<div className='component-wrapper'>
-					<span className={`large-text white uppercase letter-spacer header boldish hideElem ${this.props.isViz ? 'animate__animated animate__fadeInDown  showElem' : ''}`}>{experienceHeaderText}</span>	
+				<div className='component-wrapper smallerMinHeight'>
+					<span className={`large-text white uppercase letter-spacer header boldish hideElem  ${this.props.isViz ? 'animate__animated animate__fadeInDown  showElem' : ''}`}>{experienceHeaderText}</span>	
 					<div className = {`experience-tab-parent ${this.state.hideTabs ? 'animate__animated animate__fadeOut': 'animate__animated animate__fadeIn  animate__slow'}`}>
 						<div className='experience-tab-left experience-col'>
 							{experienceCol1.map((experience, i) => {

@@ -63,7 +63,7 @@ input {
 }
 
 .spacer {
-  margin-top: 30px;
+  margin: 25px 0;
 }
 
 .flex-child {
@@ -129,4 +129,19 @@ input {
 
 .hide {
     transform: translateY(-100%);
+}
+
+.img-wrapper {
+   background: $emphasis-black;
+   padding: 30px;
+   border-radius: 5%;
+}
+
+.block {
+  display: block !important;
+}
+
+.removeHoverEvents {
+        pointer-events: none !important;
+
 }

@@ -1,11 +1,11 @@
 .about-img {
    width: 200px;
+   border-radius: 10px;
 }
-
 .text-blurb {
+   // shape-outside: url('../../../assets//aboutImages//avatar.jpeg');
    @include md {
       text-align: right; 
-      shape-outside: url('../../../assets/images/avatar.jpeg');
    }  
 }
 

@@ -27,7 +27,7 @@ class Section extends Component {
 		const windowHeight =  window.innerHeight;
 		return (
 			<VizSensor
-				partialVisibility= {windowHeight <= 815}
+				partialVisibility= {windowHeight <= 875}
 				minTopValue = {this.props.minTopValue || 0}
 				onChange={(isVisible) => {
 					this.animateOnce(isVisible);

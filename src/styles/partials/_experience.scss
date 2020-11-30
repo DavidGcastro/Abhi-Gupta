@@ -29,16 +29,15 @@
 }
 
 .experience-tab:hover {
-    .experience-title {
-   transition: .5s cubic-bezier(.77,0,.175,1);
-    transform:.25s linear opacity;
-    transform: translateY(50%);
-    }
-    .experience-title + span { 
-       transition: .5s cubic-bezier(.77,0,.175,1);
-       transform:.25s linear opacity;
-       transform: translateY(-50%);
-       opacity: 0;
+    @include sm {
+        .experience-title {
+            @include hover-effect(50%);
+        }
+        .experience-title + span {
+            @include hover-effect(-50%);
+            opacity: 0;
+
+         }
     }
 }
 

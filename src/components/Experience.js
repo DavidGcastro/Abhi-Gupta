@@ -1,8 +1,8 @@
 import React, {Component}  from 'react';
 import experienceTemplate from '../../template/experienceTemplate';
-const experienceHeaderText = Object.keys(experienceTemplate)[0];
-const experienceCol1 = experienceTemplate[experienceHeaderText].modules.slice(0,experienceTemplate[experienceHeaderText].modules.length /2);
-const experienceCol2 = experienceTemplate[experienceHeaderText].modules.slice(experienceTemplate[experienceHeaderText].modules.length /2);
+const experienceHeaderText = experienceTemplate.title;
+const experienceCol1 = experienceTemplate.modules.slice(0,experienceTemplate.modules.length /2);
+const experienceCol2 = experienceTemplate.modules.slice(experienceTemplate.modules.length /2);
 import closeButton from '../../assets/icons/close.png';
 class Experience extends Component {
 	constructor(){
@@ -34,10 +34,10 @@ class Experience extends Component {
 			const elemDetail = document.getElementsByClassName('experience-detail-parent')[0];
 			elemTabs.classList.add('displayNone');
 			elemDetail.classList.add('flex-child');
-		}, 850);
+		}, 200);
 	}
 	currentTabData(target){
-		const data = experienceTemplate[experienceHeaderText].modules.filter((module) => {
+		const data = experienceTemplate.modules.filter((module) => {
 			return module.title === target;
 		})[0];
 		this.setState({currentTabData: data});
@@ -48,7 +48,7 @@ class Experience extends Component {
 		elemDetail.classList.remove('flex-child');
 		setTimeout(() => {
 			this.setState({hideTabs: false, activeTab: null});
-		}, 200);
+		}, 500);
 	}
 	render(){
 		return (
@@ -60,7 +60,7 @@ class Experience extends Component {
 							{experienceCol1.map((experience, i) => {
 								return <div className='experience-tab' key={i} data-tab={experience.title} onClick = {this.tabOnClick}>
 									<span className='white p uppercase boldish experience-title'>{experience.title}</span>
-									<span className='hopper-pink p'>{experience.management}</span>
+									<span className='small hopper-pink letter-spacer'>{experience.management}</span>
 								</div>;
 							})}
 						</div>
@@ -68,7 +68,7 @@ class Experience extends Component {
 							{experienceCol2.map((experience, i) => {
 								return <div className='experience-tab' key={i} data-tab={experience.title} onClick = {this.tabOnClick}>
 									<span className='white p uppercase boldish experience-title'>{experience.title}</span>
-									<span className='hopper-pink p'>{experience.management}</span>
+									<span className='small hopper-pink letter-spacer'>{experience.management}</span>
 
 								</div>;
 							})}
@@ -81,7 +81,7 @@ class Experience extends Component {
 						<div className='spacer'>
 							<div className = 'experience-detail-top'>
 								<span className='h1 white letter-spacer uppercase textCenter'>{this.state.activeTab}</span>
-								<div className='experience-detail-date uppercase hopper-pink p letter-spacer spacer'>
+								<div className='experience-detail-date uppercase hopper-green p letter-spacer spacer'>
 									<span>{this.state.currentTabData && this.state.currentTabData.date.start}</span> – <span>{this.state.currentTabData && this.state.currentTabData.date.end}</span>
 								</div>
 								<span className='p uppercase grey letter-spacer light spacer'>{this.state.currentTabData && this.state.currentTabData.management}</span>

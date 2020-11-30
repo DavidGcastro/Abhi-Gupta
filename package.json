@@ -4,9 +4,9 @@
   "main": "entry.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "watch": "webpack --watch",
+    "watch": "webpack serve",
     "start:dev": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack --mode=production"
   },
   "author": "David Castro",
   "license": "ISC",
@@ -14,7 +14,6 @@
     "@babel/preset-react": "^7.12.1",
     "animate.css": "^4.1.1",
     "body-parser": "^1.19.0",
-    "chalk": "^4.1.0",
     "i": "^0.3.6",
     "npm": "^6.14.8",
     "prop-types": "^15.7.2",
@@ -23,11 +22,8 @@
     "react-router-dom": "^5.2.0",
     "react-tsparticles": "^1.18.7",
     "react-visibility-sensor": "^5.1.1",
-    "reactstrap": "^8.6.0",
     "redux": "^4.0.5",
-    "text-to-svg": "^3.1.5",
-    "typed.js": "^2.0.11",
-    "vivus": "^0.4.5"
+    "typed.js": "^2.0.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",

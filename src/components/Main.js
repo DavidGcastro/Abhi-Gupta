@@ -1,7 +1,7 @@
 import React from 'react';
 import 'animate.css';
 import About from './About';
-import Experience from '../components/Experience';
+import Experience from './Experience';
 import Section from '../HOC/Section';
 import Header from './Header';
 import Publications from './Publications';

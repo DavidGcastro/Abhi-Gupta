@@ -2,9 +2,9 @@
 
 // must import images and then add them to template
 // CURRENTLY ABOUT COMPONENT NOT DISPLAYING AVATAR
-import avatar from '../assets/aboutImages/avatar.jpeg';
+// import avatar from '../assets/aboutImages/avatar.jpeg';
 export default {
-	img: avatar,
+	// img: avatar,
 	title: 'about',
 	textBlurb: 'Hello, I’m Abhi Gupta, Creative Technologist & User Experience Engineer based in Berlin – I create digital products with knowledge and passion.',
 	// each array item represents another column

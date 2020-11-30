@@ -7,7 +7,6 @@ class Projects extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 	handleClick(link){
-		const goto = link;
 		return () => {
 			window.open(link);
 		};

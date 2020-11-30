@@ -31,10 +31,8 @@ class Experience extends Component {
 	uponTabSelect(){
 		setTimeout(function(){
 			const elemTabs = document.getElementsByClassName('experience-tab-parent')[0];
-			const elemDetail = document.getElementsByClassName('experience-detail-parent')[0];
 			elemTabs.classList.add('displayNone');
-			elemDetail.classList.add('flex-child');
-		}, 200);
+		}, 300);
 	}
 	currentTabData(target){
 		const data = experienceTemplate.modules.filter((module) => {
@@ -44,18 +42,14 @@ class Experience extends Component {
 	}
  
 	handleclose(){
-		const elemDetail = document.getElementsByClassName('experience-detail-parent')[0];
-		elemDetail.classList.remove('flex-child');
-		setTimeout(() => {
-			this.setState({hideTabs: false, activeTab: null});
-		}, 500);
+		this.setState({hideTabs: false, activeTab: null});
 	}
 	render(){
 		return (
 			<div className='component-parent padder' id={experienceHeaderText}>
 				<div className='component-wrapper smallerMinHeight'>
 					<span className={`large-text white uppercase letter-spacer header boldish hideElem  ${this.props.isViz ? 'animate__animated animate__fadeInDown  showElem' : ''}`}>{experienceHeaderText}</span>	
-					<div className = {`experience-tab-parent ${this.state.hideTabs ? 'animate__animated animate__fadeOut': 'animate__animated animate__fadeIn  animate__slow'}`}>
+					<div className = {`experience-tab-parent ${this.state.hideTabs ? 'animate__animated animate__fadeOut animate_slow': 'animate__animated animate__fadeIn  animate__slow'}`}>
 						<div className='experience-tab-left experience-col'>
 							{experienceCol1.map((experience, i) => {
 								return <div className='experience-tab' key={i} data-tab={experience.title} onClick = {this.tabOnClick}>
@@ -74,7 +68,7 @@ class Experience extends Component {
 							})}
 						</div>
 					</div>
-					<div className={`experience-detail-parent ${this.state.hideTabs ? 'animate__animated animate__fadeIn' : 'displayNone'}`}>
+					<div className={`experience-detail-parent ${this.state.hideTabs ? 'animate__animated animate__fadeInUp' : 'animate__animated animate__fadeOut displayNone'}`}>
 						<div>
 							<img className='icon-clickable' onClick= {this.handleclose} src={closeButton}></img>
 						</div>

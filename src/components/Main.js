@@ -16,7 +16,7 @@ class Main extends Component {
 			<div className='main-parent'>
 				<Header/>
 				<div id='global-wrapper'>
-					<Section>
+					<Section minTopValue= {50}> 
 						<About/>
 					</Section>
 					<Section>

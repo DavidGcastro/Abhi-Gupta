@@ -1,8 +1,8 @@
 import React from 'react';
 import aboutTemplate from '../../template/aboutTemplate';
-import icon1 from '../../assets/icons/3.png';
-import icon4 from '../../assets/icons/6.png';
-import icon6 from '../../assets/icons/8.png';
+import icon1 from '../../assets/images/neuralnet_1.png';
+import icon4 from '../../assets/images/neuralnet_2.png';
+import icon6 from '../../assets/images/neuralnet_3.png';
 const About = (props) => {
 	return (
 		<div className='component-parent padder' id='About'>

@@ -1,5 +1,4 @@
 import  React, {Component} from 'react';
-
 import Typed from 'typed.js';
 import PropTypes from 'prop-types';  
 class CenterText extends Component  {
@@ -16,7 +15,12 @@ class CenterText extends Component  {
 		this.type();
 	}
 	render() {
-		return <div className='centerText-parent'><span className='centerText h2 light'></span></div>;
+		return <div className='centerText-parent'>
+			<span className='large-text boldish letter-spacer padder uppercase'>Abhi Gupta</span>
+			<div>
+				<span className='centerText h2 light'></span>
+			</div>	
+		</div>;
 	}
 }
 

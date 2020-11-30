@@ -1,3 +1,5 @@
+// the key first key in this object is the name of the module and header text
+// each module represents one work experience. 
 export default {
 	work: {
 		modules: [

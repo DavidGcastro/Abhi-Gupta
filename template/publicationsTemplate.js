@@ -1,4 +1,6 @@
 
+// highlighted pub is the publicaiton is displayed on the bigger card.
+// a link is needed
 export default {
 	title: 'Publications',
 	highlightedPub : {

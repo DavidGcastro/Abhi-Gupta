@@ -1,10 +1,9 @@
 
 
+// each array item represents another column
+// include name of image if you want to include one
 export default {
 	header: 'about',
-	// optional image relative to ./images
-	// for columns 
-	imageSrc: 'avatar.jpeg',
 	textBlurb: 'Hello, I’m Abhi Gupta, Creative Technologist & User Experience Engineer based in Berlin – I create digital products with knowledge and passion.',
 	columns: [
 		'With more than a decade of experience I tackle a broad variety of disciplines in the process of creating meaningful products that make a real difference. With carefully selected tools and skills I express my visions ranging from product design to the creation of user experience up to development and delivery. \n \t My distinctive strategic thinking helps me to pinpoint the holistic scope of a product and evolve it by adding new business ideas, innovations and values that meet user needs as well as business objectives. Besides building user flows, information architecture and wireframes, tailor-made',

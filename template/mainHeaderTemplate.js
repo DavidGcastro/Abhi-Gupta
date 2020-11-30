@@ -1,3 +1,4 @@
+// These are the strings the get looped over in the typed animation in the first componenet
 export default {
 	name: {
 		first: 'Abhi',

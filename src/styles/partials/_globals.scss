@@ -119,10 +119,14 @@ input {
 
 .icon-clickable:hover{
   @include sm {
-      width: 50px;
+      height: 50px;
   }
 }
 
 .noMinHeight {
   min-height: initial !important;
+}
+
+.hide {
+    transform: translateY(-100%);
 }

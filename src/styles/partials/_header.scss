@@ -1,27 +1,8 @@
-.loader-parent{
-    @include parent;
-    background: $black;  
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    transition: all 800ms ease;
-    position: fixed;
-    z-index: 1000000;
-    top:0;
-}
-
 .centerText-parent{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.hide {
-    transform: translateY(-100%);
-}
-
 
 .main-header{
     @include parent;
@@ -36,8 +17,8 @@
 
 .centerText-parent{
     @include parent;
-    @extend .h1;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 

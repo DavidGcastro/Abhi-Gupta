@@ -13,10 +13,13 @@ class Section extends Component {
 	animateOnce(){
 		let callCount = 0;
 		return (isVisible) => {
-			callCount+=1;
-			if(callCount <= 2){
-				this.setState({isViz: isVisible});
+			if(isVisible){
+				callCount+=1;
+				if(callCount <= 1){
+					this.setState({isViz: isVisible});
+				}
 			}
+		
 		};
 	}
 	render() {
@@ -24,8 +27,8 @@ class Section extends Component {
 		const windowHeight =  window.innerHeight;
 		return (
 			<VizSensor
-				partialVisibility= {windowHeight <= 900}
-				minTopValue ={50}
+				partialVisibility= {windowHeight <= 815}
+				minTopValue = {this.props.minTopValue || 0}
 				onChange={(isVisible) => {
 					this.animateOnce(isVisible);
 				}}

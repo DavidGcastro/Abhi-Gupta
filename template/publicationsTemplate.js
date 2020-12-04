@@ -6,7 +6,7 @@ export default {
 	highlightedPub : {
 		title: 'This is why you shouldnt hire me',	
 		category: 'Machine Learning',
-		link: 'google.com'
+		link: './publications/abhi_gupta_resume.pdf'
 	},
 	pubArr: [
 		{
@@ -24,7 +24,7 @@ export default {
 			contributors: ['robert kwiatkowskil', 'abhi gupta', 'wunjun sun', 'boyuan chen', 'hod lipson'], 
 			status: 'under review',
 			category: 'Machine Learning',
-			link: 'google.com'
+			link: './publications/abhi_gupta_resume.pdf'
 
 
 		},

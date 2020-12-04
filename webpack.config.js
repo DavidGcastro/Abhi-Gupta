@@ -1,10 +1,19 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
 	entry: path.resolve(__dirname, 'src/entry.js'),
 	mode: 'development',
-	plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin({template: path.resolve('./src/index.html')})],
+	plugins: [
+		new webpack.ProgressPlugin(),
+		new CopyPlugin({
+			patterns: [
+				{ from: path.join(__dirname, './assets/publications'), to: path.join(__dirname, 'dist/publications') },
+			],
+		}),
+		new HtmlWebpackPlugin({template: path.resolve('./src/index.html')}),
+	],
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
 		compress: true,

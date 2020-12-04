@@ -3,7 +3,6 @@
    border-radius: 10px;
 }
 .text-blurb {
-   // shape-outside: url('../../../assets//aboutImages//avatar.jpeg');
    @include md {
       text-align: right; 
    }  

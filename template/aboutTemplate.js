@@ -1,16 +1,12 @@
 
-
-// must import images and then add them to template
-// CURRENTLY ABOUT COMPONENT NOT DISPLAYING AVATAR
-// import avatar from '../assets/aboutImages/avatar.jpeg';
+// brackets mean apply emphasis color
 export default {
-	// img: avatar,
 	title: 'about',
-	textBlurb: 'Hello, I’m Abhi Gupta, Creative Technologist & User Experience Engineer based in Berlin – I create digital products with knowledge and passion.',
-	// each array item represents another column
-	columns: [
-		'With more than a decade of experience I tackle a broad variety of disciplines in the process of creating meaningful products that make a real difference. With carefully selected tools and skills I express my visions ranging from product design to the creation of user experience up to development and delivery. \n \t My distinctive strategic thinking helps me to pinpoint the holistic scope of a product and evolve it by adding new business ideas, innovations and values that meet user needs as well as business objectives. Besides building user flows, information architecture and wireframes, tailor-made',
-		'interactive prototypes are constantly putting concepts and ideas to the test and emphasize the user-centered approach in my work. I work with the latest techniques in web development and my agile workflow is the result of the precisely combined tools and strategies that include object oriented patterns, build scripts, pre-processors and minification, source code management, testing as well as deployment. With my knowledge in both design and technology I foster productive teams in an collaborative environment that meets the requirements of creatives and developers at the same time.',
-		
-	]
+	main: [
+		'Hi! I am in my final year at Columbia University studying Computer Science & Operations Research in the engineering school. I develop websites, I build apps, and I tune deep neural networks.',
+		'I am advised by several leading professors in AI: {Shipra Agrawal}, {Hod Lipson}, {Shuran Song}, and {Peter Allen}.',
+		'In my freetime, I teach robots how to learn, I make buckets from three, and I dominate Settlers of Catan.'
+	],
+	'research goals' : 'I aim to leverage reinforcement learning to solve the challenges of real life that cannot be simulated. With a focus on the theory of optimization in sequentialdecision-making, I hope to extend online algorithms to learn from real-world interaction and generalize to all situations, including those that cannot be predetermined',
+	'research tops': ['reinforcement learning',  'discrete optimization',  'robotics',  'computer vision']
 };

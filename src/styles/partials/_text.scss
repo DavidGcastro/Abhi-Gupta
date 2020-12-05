@@ -18,24 +18,24 @@
 }
 
 .h2{
-   font-size: 18px;
+   font-size: 15px;
    @include lg{
-       font-size: 1.75vw;
+       font-size: 1.5vw;
    }
    @include xl{
-       font-size: 25px;
+       font-size: 22px;
    } 
 }
 
 
 .p {
     line-height: 1.85em;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .small {
    line-height: 1.85em;
-    font-size: 12px; 
+    font-size: 10px; 
 }
 a {
   text-decoration: none;

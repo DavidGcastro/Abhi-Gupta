@@ -6,7 +6,7 @@ export default {
 	highlightedPub : {
 		title: 'This is why you shouldnt hire me',	
 		category: 'Machine Learning',
-		link: ''
+		link: 'google'
 	},
 	pubArr: [
 		{

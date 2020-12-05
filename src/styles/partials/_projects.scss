@@ -1,6 +1,13 @@
 .project-img {
-    max-width: 100%;
+   width: auto;
+   height: auto;
+    max-width: 325px;
+    max-height: 400px;
     border-radius: 10px;
+    @include lg{
+        max-width: 400px;
+
+    }
 }
 
 .project-parent {
@@ -9,16 +16,13 @@
     min-width: 100%;
     flex: 1;
     padding: 15px;
-    min-height: 325px;
 }
 
 .project-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include md {
-        max-width: 50%;
-    }
+    min-width: 50%;
 }
 
 .project-parent {
@@ -34,10 +38,9 @@
 }
 
 .projects-contrib {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    // max-width: 500px;
+    span {
+        margin-right: 20px;
+    }
 }
 
 .project-text-top {
@@ -51,16 +54,9 @@
     }
 }
 
-
-// hover effect
-.project-text:hover {
-    @include sm {
-    .project-text-top {
-        @include hover-effect(10%);
-    }
-    .project-link{ 
-        @include hover-effect(50%);
-         opacity: 0;
-     }   
-    }
+.project-img-container{
+    justify-content: flex-end;
+    display: flex;
+    min-width: 50%;
+    align-items: center;
 }

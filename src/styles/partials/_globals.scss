@@ -20,9 +20,8 @@ body {
 }
 #global-wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1600px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 * {
@@ -30,27 +29,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-.fixed {
-    position: fixed !important;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-}
-
 input {
   -webkit-appearance: none;
   box-shadow: none;
 }
-
-.center-content-width{
-  @include sm{
-    width: 100%;
-  }
-  max-width: 900px;
-}
-
 .padder {
    padding: 25px;
    @include lg{
@@ -63,7 +45,11 @@ input {
 }
 
 .spacer {
-  margin: 25px 0;
+  margin: 25px 0 !important;
+}
+
+.big-spacer {
+   margin-top: 200px !important;
 }
 
 .flex-child {
@@ -103,7 +89,7 @@ input {
    flex-wrap: nowrap;
    min-width: 100%;
    width: 100%;
-   @include viewportBiggerThanMinHeight;
+  //  @include viewportBiggerThanMinHeight;
 }
 
 .no-scroll {
@@ -144,4 +130,21 @@ input {
 .removeHoverEvents {
         pointer-events: none !important;
 
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.link-container {
+  a {
+    display: inline;
+    margin-right: 20px;
+  }
+}
+
+.main-content {
+  min-height: 100%;
+  width: 100%;
+  flex: 5;
 }

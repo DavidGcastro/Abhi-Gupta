@@ -22,7 +22,6 @@
    padding: 20px;
    border-radius: 5%;
    background: $emphasis-black;
-//    min-width: 275px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -55,10 +54,9 @@
 }
 
 .pubTab {
-    cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-top: 50px;
     justify-content: space-between;
     @include md {
         text-align: initial;

@@ -12,8 +12,12 @@ class Main extends Component {
 	constructor(){
 		super();
 		this.state = {
-			activeTab: ''
+			activeTab: 'about'
 		};
+		this.setActiveTab = this.setActiveTab.bind(this);
+	}
+	setActiveTab(active){
+		this.setState({activeTab: active});
 	}
 	render(){
 		return (
@@ -21,23 +25,23 @@ class Main extends Component {
 				<div id='global-wrapper'>
 					<div className='main-content padder'>
 						<Fixed/>
-						<Section>
+						<Section setActiveTab = {this.setActiveTab} tabName='about'>
 							<About/>
 						</Section>
-						<Section>
+						<Section setActiveTab = {this.setActiveTab} tabName='publications'>
 							<Publications/>
 						</Section>
-						<Section>
+						<Section setActiveTab = {this.setActiveTab} tabName='projects'>
 							<Projects/>
 						</Section>
-						<Section>
+						<Section setActiveTab = {this.setActiveTab} tabName='experience'>
 							<Experience/>
 						</Section>
-						<Section>
+						<Section setActiveTab = {this.setActiveTab} tabName='contact'>
 							<Contact/>
 						</Section>
 					</div>
-					<Nav/>
+					<Nav activeTab={this.state.activeTab}/>
 				</div>
 			</div>	
 		);

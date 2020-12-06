@@ -5,12 +5,21 @@ class Nav extends Component {
 		super();
 		this.state = {
 			sections: [],
-			activeLink: null
+			activeTab: null
 		};
+		this.handleClick = this.handleClick.bind(this);
 	}
 	componentDidMount(){
 		const sections = [...document.getElementsByClassName('component-parent')].map(section => section.id);
 		this.setState({sections});
+	}
+	handleClick(e){
+		this.setState({activeTab: e.target.innerText.toLowerCase()});
+		const offset = getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height;
+		const element = document.getElementById(e.target.innerText.toLowerCase());
+		const yOffset = -(parseInt(offset) + 20); 
+		const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+		window.scrollTo({top: y, behavior: 'smooth'});
 	}
 
 	render(){
@@ -20,7 +29,7 @@ class Nav extends Component {
 					{this.state.sections && this.state.sections.length && this.state.sections.map((section, i) => {
 						return (
 							<div className='nav-link-container' key={i}>
-								<a className='nav-link uppercase letter-spacer boldish' id={section} href={`#${section}`}>{section}</a>
+								<span className={`nav-link uppercase letter-spacer a h2 ${this.props.activeTab.toLowerCase() === section.toLowerCase() ? 'active-tab': ''}`} onClick={this.handleClick}>{section}</span>
 							</div>
 						);
 					})}

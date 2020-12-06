@@ -11,15 +11,11 @@ class Section extends Component {
 		this.animateOnce = this.animateOnce.call(this);
 	}
 	animateOnce(){
-		let callCount = 0;
 		return (isVisible) => {
 			if(isVisible){
-				callCount+=1;
-				if(callCount <= 1){
-					this.setState({isViz: isVisible});
-				}
-			}
-		
+				this.setState({isViz: isVisible});
+				this.props.setActiveTab(this.props.tabName);	
+			}	
 		};
 	}
 	render() {

@@ -3,10 +3,10 @@ import React from 'react';
 
 const Fixed = () => {
 	return (
-		<div className='fixed-parent'>
+		<div className='fixed-parent max-width'>
 			<div>
-				<span className='h2 letter-spacer white'>Abhi Gupta</span>
-				<span className='small grey block light'>Columbia Student. Software Engineer. <span className='hopper-green'>Aspiring Scientist.</span></span>
+				<span className='large-text letter-spacer white'>Abhi Gupta</span>
+				<span className='p grey block light'>Columbia Student. Software Engineer. <span className='pink'>Aspiring Scientist.</span></span>
 			</div>
 			
 		</div>

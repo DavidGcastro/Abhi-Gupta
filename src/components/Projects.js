@@ -7,7 +7,7 @@ class Projects extends Component {
 	}
 	render(){
 		return 	(
-			<div className='component-parent flex-child big-spacer' id={researchProjectsTemplate.title}>
+			<div className='component-parent flex-child big-spacer' id={researchProjectsTemplate.title.toLowerCase()}>
 				<div className='component-wrapper'>
 					{researchProjectsTemplate.projects.map((project, i) => {
 						return (
@@ -20,7 +20,7 @@ class Projects extends Component {
 										</div>
 										<span className='p grey light '>{project.presented}</span>							
 										<span className='small hopper-green light'>{project.additionalDataToHighlight}</span>
-										<div className='spacer'>
+										<div style={{marginTop:25}}>
 											<span className='grey light block p'>Contributors</span>
 											<div className='projects-contrib'>
 												{project.contributors && project.contributors.map((contributor, i) => {
@@ -31,16 +31,18 @@ class Projects extends Component {
 											</div>
 										</div>
 									</div>
+									
+								</div>
+							
+								<div className='project-img-container'>
+									<img src={project.img} className='project-img'></img>
 									<div className='link-container'>
 										{project.links && Object.keys(project.links).map((link, i) => {
-											return <a href={project.links[link]}className='pink letter-spacer small flex-child' key={i}>{link}</a>;
+											return <a href={project.links[link]}className='grey letter-spacer small flex-child a' key={i}>{link}</a>;
 										})}
 									</div>	
+										
 								</div>
-								{project.img ? 	
-									<div className='project-img-container'>
-										<img src={project.img} className='project-img'></img>
-									</div> : ''}
 							
 							</div>
 						);

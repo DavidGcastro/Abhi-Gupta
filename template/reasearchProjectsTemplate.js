@@ -13,13 +13,13 @@ const obj =  {
 			contributors: ['Bohan Wu', 'Feng Xu', 'Zhanpeng He', 'Abhi Gupta', 'Peter K. Allen'],
 			presented: 'International Conference on Intelligent Robots and Systems (IROS)',     
 			year: '2020',
-			img: imageForSquirl,
+			// img: imageForSquirl,
 			links: {
 				arXiv: 'google.com',
 				Website: 'youtube.com',
 				Video: 'facebook.com'
 			},
-			additionalDataToHighlight: '15-Minute Oral Presentation, Acceptance Rate: 47%'
+			// additionalDataToHighlight: '15-Minute Oral Presentation, Acceptance Rate: 47%'
 		},
 		{
 			title: 'Generative Attention Learning: A "GenerAL" Framework for High-Performance Multi-Fingered Grasping in Clutter',
@@ -30,7 +30,7 @@ const obj =  {
 				arXiv: '',
 				Video: ''
 			},
-			img: imageForGenerative
+			// img: imageForGenerative
 		},
 		{
 			title: 'SQUIRL: Robust and Efficient Learning from Video Demonstration of Long-Horizon Robotic Manipulation Tasks',
@@ -40,7 +40,7 @@ const obj =  {
 			links: {
 				arXiv: '',
 			},
-			additionalDataToHighlight: '15-Minute Oral Presentation, Acceptance Rate: 47%'
+			// additionalDataToHighlight: '15-Minute Oral Presentation, Acceptance Rate: 47%'
 		},
 	]
 };

@@ -4,7 +4,7 @@ body {
   color:white;
   font-family: Roboto Mono;
   padding:0;
-  background: $black;
+  background: black;
   width: 100%;
 }
 #root {
@@ -20,9 +20,14 @@ body {
 }
 #global-wrapper {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: $max-width;
   display: flex;
   justify-content: space-between;
+}
+
+.max-width {
+    max-width: $max-width;
+    margin: 0 auto;
 }
 * {
   margin: 0;
@@ -54,6 +59,14 @@ input {
 
 .flex-child {
   flex: 1;
+}
+
+.a {
+  transition: all 100ms ease;
+  color: $grey;
+  &:hover {
+    font-weight: 800;
+  }
 }
 
 .component-wrapper {  
@@ -147,4 +160,10 @@ input {
   min-height: 100%;
   width: 100%;
   flex: 5;
+}
+
+.active-tab {
+   transition: all 200ms ease;
+   color: $hopper-green !important;
+   font-weight: 600 !important;
 }

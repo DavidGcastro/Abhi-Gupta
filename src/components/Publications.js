@@ -13,7 +13,7 @@ const colBuilder = (arr, i) => {
 							<span className='h2 white uppercase light'>{pub.title}</span>
 							<span className='p grey light spacer'>{pub.description}</span>
 						</div>
-						<span className='small pink letter-spacer pubTab-link'>Read more</span>
+						<span className='small grey letter-spacer pubTab-link'>Read more</span>
 					</a> :
 					<div key={i} className='pubTab removeHoverEvents'>
 						<div className='pubTab-top'>
@@ -29,7 +29,7 @@ const colBuilder = (arr, i) => {
 };
 const Publications = (props) => {
 	return (
-		<div className='component-parent big-spacer' id={publicationsTemplate.title}>
+		<div className='component-parent big-spacer' id={publicationsTemplate.title.toLowerCase()}>
 			<div className='component-wrapper'>
 				<div className='publications-parent'>
 					{
@@ -39,7 +39,7 @@ const Publications = (props) => {
 									<span className='small light hopper-green'>{publicationsTemplate.highlightedPub && publicationsTemplate.highlightedPub.category}</span>
 									<span className='h2 boldish uppercase textCenter letter-spacer'>{publicationsTemplate.highlightedPub && publicationsTemplate.highlightedPub.title}</span>
 								</div>
-								<span className='letter-spacer pink small pubTab-link'>{publicationsTemplate.highlightedPub && publicationsTemplate.highlightedPub.link ? 'Read More' : ''}</span>
+								<span className='letter-spacer grey small pubTab-link'>{publicationsTemplate.highlightedPub && publicationsTemplate.highlightedPub.link ? 'Read More' : ''}</span>
 							</a> : 	
 							<div className ='publications-left removeHoverEvents'>
 								<div className='publications-highlight'>

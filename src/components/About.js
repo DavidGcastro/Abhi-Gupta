@@ -11,12 +11,12 @@ class About extends React.Component {
 	}
 	componentDidMount(){
 		const fixed = getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height;
-		this.setState({padHeight: fixed});
+		this.setState({padHeight: fixed});	
 	}
 
-	render() {
+	render() {	
 		return (
-			<div className='component-parent' id={aboutTemplate.title} style={{marginTop: this.state.padHeight}}>
+			<div className='component-parent' id={aboutTemplate.title.toLowerCase()} style={{marginTop: this.state.padHeight}}>
 				<div className='component-wrapper'>
 					<div className='about-main-parent'>
 						<div className='about-img-wrapper'>
@@ -24,7 +24,7 @@ class About extends React.Component {
 						</div>	
 						<div className='about-main-text'>
 							{aboutTemplate && aboutTemplate.main.map((paragraph, i) => {
-								return <span key={i} className='p grey block flex-child spacer' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'hopper-green')}}></span>;
+								return <span key={i} className='p grey block flex-child spacer' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'pink')}}></span>;
 							})}
 						</div>
 					</div>
@@ -37,7 +37,7 @@ class About extends React.Component {
 						<div className='flex-child spacer about-topics-container'>
 							{aboutTemplate[Object.keys(aboutTemplate)[3]].map((topic, i) => {
 								return (
-									<span className='p hopper-green flex-child' key={i}>{topic}</span>
+									<span className='p pink flex-child' key={i}>{topic}</span>
 								);
 							})}
 						</div>

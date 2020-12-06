@@ -1,5 +1,4 @@
 const replacePlaceholders =  (text, type, classList, context) => {
-	console.log(context);
 	const rxp = /{([^}]+)}/g;
 	let curMatch;
 	const found = [];

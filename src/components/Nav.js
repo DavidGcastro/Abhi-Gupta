@@ -20,7 +20,7 @@ class Nav extends Component {
 					{this.state.sections && this.state.sections.length && this.state.sections.map((section, i) => {
 						return (
 							<div className='nav-link-container' key={i}>
-								<a className='nav-link uppercase letter-spacer boldish' href={`#${section}`}>{section}</a>
+								<a className='nav-link uppercase letter-spacer boldish' id={section} href={`#${section}`}>{section}</a>
 							</div>
 						);
 					})}

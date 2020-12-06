@@ -45,24 +45,15 @@
   flex-wrap: wrap;
 }
 
-@mixin underline {
+@mixin underline($color) {
   content: '';
   display: block;
   width: 100%;
-  background: #000;
+  background: $color;
   height: 2px;
   margin-top: 40px;
 }
 
-@mixin background-diagonal {
-  background: white;
-  transform: rotate(-8deg);
-  height: 225px;
-  width: 120%;
-  z-index: 150;
-  position: relative;
-  left: 0;
-}
 
 @mixin viewportBiggerThanMinHeight {
   @media (min-height: #{$min-height}) and (min-width: #{$screen-md-min} ){

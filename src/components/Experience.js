@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Experience = () => {
+const Experience = (props) => {
 	return (
 		<div className='component-parent flex-child big-spacer' id='Experience'>
 			<div className='component-wrapper'></div>

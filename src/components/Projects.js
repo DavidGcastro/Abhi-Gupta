@@ -14,7 +14,7 @@ class Projects extends Component {
 							<div key={i} className='project-parent flex-child spacer'>
 								<div className='project-text flex-child'>
 									<div className='project-text-top'>
-										<div className='spacer'>
+										<div className=''>
 											<span className='small grey light block'>{project.year}</span>
 											<span className='light h2 white'>{project.title}</span>
 										</div>
@@ -36,7 +36,7 @@ class Projects extends Component {
 							
 								<div className='project-img-container'>
 									<img src={project.img} className='project-img'></img>
-									<div className='link-container'>
+									<div className='link-container spacer'>
 										{project.links && Object.keys(project.links).map((link, i) => {
 											return <a href={project.links[link]}className='grey letter-spacer small flex-child a' key={i}>{link}</a>;
 										})}

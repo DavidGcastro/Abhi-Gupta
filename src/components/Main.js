@@ -28,7 +28,7 @@ class Main extends Component {
 						<Section setActiveTab = {this.setActiveTab} tabName='about'>
 							<About/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='publications'>
+						<Section setActiveTab = {this.setActiveTab} tabName='research'>
 							<Publications/>
 						</Section>
 						<Section setActiveTab = {this.setActiveTab} tabName='projects'>

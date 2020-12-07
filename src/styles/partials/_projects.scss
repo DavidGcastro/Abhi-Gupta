@@ -16,6 +16,7 @@
     min-width: 100%;
     flex: 1;
     padding: 15px;
+    flex-direction: row-reverse;
 }
 
 .project-text {
@@ -58,7 +59,7 @@
     justify-content: flex-end;
     display: flex;
     min-width: 50%;
-    align-items: center;
+    // align-items: center;
     flex-direction: column;
     justify-content: space-between;
 }

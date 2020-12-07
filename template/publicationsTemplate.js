@@ -2,40 +2,40 @@
 // highlighted pub is the publicaiton is displayed on the bigger card.
 // a link is needed
 export default {
-	title: 'Publications',
+	title: 'Research',
 	highlightedPub : {
-		title: 'This is why you shouldnt hire me',	
-		category: 'Machine Learning',
-		link: 'google'
+		title: 'Formulating Branch-and-Bound as a Reinforcement Learning Problem',	
+		year: '2020',
+		link: 'google.com',
 	},
 	pubArr: [
 		{
-			title: 'corl 2020',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis consectetur ex ac interdum. Duis ut facilisis massa, eu dignissim libero. Nullam id justo dapibus, eleifend turpis sed, consequat magna.',
-			contributors: ['robert kwiatkowskil', 'abhi gupta', 'wunjun sun', 'boyuan chen', 'hod lipson'], 
-			status: 'under review',
-			category: 'Machine Learning',
-			link: 'google.com'
+			title: 'A Self-Supervised Framework for Online Robot-Camera Calibration',
+			description: 'In preparation for RSS 2021',
+			contributors: ['Abhi Gupta', 'Jingxi Xu', 'Peter Allen', 'Shuran Song'],
+			link: 'google.com',
+			year: '2020',
 
 		},
 		{
-			title: 'iros 2020',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis consectetur ex ac interdum. Duis ut facilisis massa, eu dignissim libero. Nullam id justo dapibus, eleifend turpis sed, consequat magna.',
-			contributors: ['robert kwiatkowskil', 'abhi gupta', 'wunjun sun', 'boyuan chen', 'hod lipson'], 
-			status: 'under review',
-			category: 'Machine Learning',
-			link: ''
-
-
+			title: 'Leveraging Uncertainty-Aware Dynamics Models to Refine Actor-Critic Methods',
+			description: 'In preparation for ICML 2021',
+			contributors: ['Robert Kwiatkowski', 'Abhi Gupta', 'Wonjun Son', 'Boyuan Chen', 'Hod Lipson'], 
+			link: 'google.com',
+			year: '2020',
 		},
 		{
-			title: 'autonomous robots 2020',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis consectetur ex ac interdum. Duis ut facilisis massa, eu dignissim libero. Nullam id justo dapibus, eleifend turpis sed, consequat magna.',
-			contributors: ['robert kwiatkowskil', 'abhi gupta', 'wunjun sun', 'boyuan chen', 'hod lipson'], 
-			status: 'under review',
-			category: 'Artificial Intelligence',
-			link: 'google.com'
-
+			title: 'SQUIRL: Robust and Efficient Learning from Video Demonstration of Long-Horizon Robotic Manipulation Tasks',
+			description: 'IROS 2020',
+			year: '2020',
+			link: 'google.com',
+		},
+		{
+			title: 'Generative Attention Learning: A General Framework for High-Performance Multi-fingered Grasping in Clutter',
+			description: 'Autonomous Robots 2020',
+			year: '2020',
+			link: 'google.com',
+			contributors: ['Bohan Wu', 'Iretiayo Akinola', 'Abhi Gupta', 'Feng Xu', 'Jake Varley', 'David Watkins-Valls', 'Peter Allen']
 		},
 	]
 };

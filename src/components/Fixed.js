@@ -6,7 +6,7 @@ const Fixed = () => {
 		<div className='fixed-parent max-width'>
 			<div>
 				<span className='large-text letter-spacer white'>Abhi Gupta</span>
-				<span className='p grey block light'>Columbia Student. Software Engineer. <span className='pink'>Aspiring Scientist.</span></span>
+				<span className='small grey block light'>Columbia Student. Software Engineer. <span className='pink'>Aspiring Scientist.</span></span>
 			</div>
 			
 		</div>

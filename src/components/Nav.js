@@ -11,7 +11,6 @@ class Nav extends Component {
 	}
 	componentDidMount(){
 		const sections = [...document.getElementsByClassName('component-parent')].map(section => section.id);
-		console.log(sections);
 		this.setState({sections});
 	}
 	handleClick(e){

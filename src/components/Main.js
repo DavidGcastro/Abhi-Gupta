@@ -1,8 +1,8 @@
 import 'animate.css';
 import About from './About';
 import Section from '../HOC/Section';
-import Publications from './Publications';
 import Projects from './Projects';
+import Research from './ResearchExperience';
 import React, {Component}  from 'react';
 import Nav from './Nav';
 import Fixed from './Fixed';
@@ -29,7 +29,7 @@ class Main extends Component {
 							<About/>
 						</Section>
 						<Section setActiveTab = {this.setActiveTab} tabName='research'>
-							<Publications/>
+							<Research/>
 						</Section>
 						<Section setActiveTab = {this.setActiveTab} tabName='projects'>
 							<Projects/>

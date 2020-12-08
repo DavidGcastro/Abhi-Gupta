@@ -2,7 +2,7 @@
 // highlighted pub is the publicaiton is displayed on the bigger card.
 // a link is needed
 export default {
-	title: 'Research',
+	title: 'Projects',
 	highlightedPub : {
 		title: 'Formulating Branch-and-Bound as a Reinforcement Learning Problem',	
 		year: '2020',

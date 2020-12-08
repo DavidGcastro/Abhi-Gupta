@@ -1,58 +1,62 @@
-import React, {Component}  from 'react';
-import researchProjectsTemplate from '../../template/reasearchProjectsTemplate';
-
-class Projects extends Component {
-	constructor(){
-		super();
-	}
-	render(){
-		return 	(
-			<div className='component-parent flex-child big-spacer' id={researchProjectsTemplate.title.toLowerCase()}>
-				<div className='component-wrapper'>
-					{researchProjectsTemplate.projects.map((project, i) => {
-						return (
-							<div key={i} className='project-parent flex-child spacer'>
-								<div className='project-text flex-child'>
-									<div className='project-text-top'>
-										<div className=''>
-											<span className='small grey light block'>{project.year}</span>
-											<span className='light h2 white'>{project.title}</span>
-										</div>
-										<span className='p grey light '>{project.presented}</span>							
-										<span className='small hopper-green light'>{project.additionalDataToHighlight}</span>
-										<div style={{marginTop:25}}>
-											<span className='grey light block p'>Contributors</span>
-											<div className='projects-contrib'>
-												{project.contributors && project.contributors.map((contributor, i) => {
-													return (
-														<span className='small white light' key={i}>{contributor}</span>
-													);
-												})}
-											</div>
-										</div>
-									</div>
-									
+import React from 'react';
+import projectsTemplate from '../../template/projectsTemplate';
+const pubAdsCol1 = projectsTemplate.pubArr.slice(0, projectsTemplate.pubArr.length /2);
+const pubAdsCol2 = projectsTemplate.pubArr.slice(projectsTemplate.pubArr.length /2);
+const colBuilder = (arr, i) => {
+	return <div className='publicationsCol' key={i}>
+		{arr.map((pub, i) => {
+			return (
+				pub.link && pub.link.length ? 
+					<a key={i} className='pubTab pointer' href = {pub.link} target='_blank'>
+						<div className='pubTab-top'>
+							<span className='small grey light hopper-green'>{pub.year}</span>
+							<span className='p  white  boldish'>{pub.title}</span>
+							<span className='p grey light spacer'>{pub.description}</span>
+						</div>
+						<span className='small grey letter-spacer pubTab-link'>Read more</span>
+					</a> :
+					<div key={i} className='pubTab removeHoverEvents'>
+						<div className='pubTab-top'>
+							<span className='small grey light hopper-green'>{pub.year}</span>
+							<span className='p boldish white'>{pub.title}</span>
+							<span className='p grey light spacer'>{pub.description}</span>
+						</div>
+					
+					</div>
+			);
+		})}
+	</div>;
+};
+const Projects = () => {
+	return (
+		<div className='component-parent big-spacer' id={projectsTemplate.title.toLowerCase()}>
+			<div className='component-wrapper'>
+				<div className='publications-parent'>
+					{
+						projectsTemplate && projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.link.length ? 		
+							<a href = {projectsTemplate.highlightedPub.link} target='_blank' className ='publications-left'>
+								<div className='publications-highlight'>
+									<span className='small light hopper-green'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.year}</span>
+									<span className='p boldish uppercase textCenter letter-spacer'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.title}</span>
 								</div>
-							
-								<div className='project-img-container'>
-									<img src={project.img} className='project-img'></img>
-									<div className='link-container spacer'>
-										{project.links && Object.keys(project.links).map((link, i) => {
-											return <a href={project.links[link]}className='grey letter-spacer small flex-child a' key={i}>{link}</a>;
-										})}
-									</div>	
-										
+								<span className='letter-spacer grey small pubTab-link'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.link ? 'Read More' : ''}</span>
+							</a> : 	
+							<div className ='publications-left removeHoverEvents'>
+								<div className='publications-highlight'>
+									<span className='small light hopper-green'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.year}</span>
+									<span className='p boldish textCenter letter-spacer'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.title}</span>
+									<div></div>
 								</div>
-							
 							</div>
-						);
-					})}
+					}
+					<div className ='publications-right'>
+						{colBuilder(pubAdsCol2)}
+						{colBuilder(pubAdsCol1)}
+					</div>
 				</div>
 			</div>
-		);
-	}
-}
-
+		</div>);
+};
 
 
 

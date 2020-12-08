@@ -167,3 +167,12 @@ input {
    color: black !important;
    font-weight: 600 !important;
 }
+
+.image-style {
+  z-index: -1;
+  border-radius: 3%;
+}
+
+.relative {
+  position: relative!important;
+}

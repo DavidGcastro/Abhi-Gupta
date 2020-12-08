@@ -1,5 +1,6 @@
 import React, {Component}  from 'react';
 import researchExperienceTemplate from '../../template/reasearchExperienceTemplate';
+import LazyImage from '../HOC/LazyImage';
 
 class  Research extends Component {
 	constructor(){
@@ -33,7 +34,7 @@ class  Research extends Component {
 							
 								<div className='research-img-container'>
 									<span className='h2 grey light block'>{project.year}</span>
-									<img src={project.img} className='research-img'></img>
+									<LazyImage src = {project.img} imageWrapperStyle='research-img-wrapper' imageStyle='image-style'/>
 									<div className='link-container'>
 										{project.links && Object.keys(project.links).map((link, i) => {
 											return <a href={project.links[link]}className='grey letter-spacer p flex-child a' key={i}>{link}</a>;

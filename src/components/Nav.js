@@ -29,7 +29,7 @@ class Nav extends Component {
 					{this.state.sections && this.state.sections.length && this.state.sections.map((section, i) => {
 						return (
 							<div className='nav-link-container' key={i}>
-								<span className={`nav-link uppercase letter-spacer a h2 pointer ${this.props.activeTab.toLowerCase() === section.toLowerCase() ? 'active-tab': ''}`} onClick={this.handleClick}>{section}</span>
+								<span className={`uppercase letter-spacer a h2 pointer ${this.props.activeTab.toLowerCase() === section.toLowerCase() ? 'active-tab': ''}`} onClick={this.handleClick}>{section}</span>
 							</div>
 						);
 					})}

@@ -60,25 +60,6 @@ a {
     font-weight: 200 !important;
 }
 
-.flexer-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.flexer-row {
-     display: flex;
-    flex-direction: row;
-}
-
-
-.pink{
-    color: $pink !important;
-}
-
-.hopper-green {
-    color: $hopper-green !important;
-}
-
 .letter-spacer {
     letter-spacing: 5px;
 }
@@ -87,23 +68,30 @@ a {
     color: $black;
 }
 
-.grey {
-    color: $text-grey;
-}
-
-.white {
-    color: white !important;
-}
-
-.big-letter {
-    font-size: 25px;
-    letter-spacing: .1px;
-}
-
 .indent{
     margin-left: 20px;
 }
 
 .textCenter {
     text-align: center!important;
+}
+
+.link-color {
+    color: $orange!important;
+}
+
+.emphasis-color {
+    color: $pink !important
+}
+
+.detail-color {
+    color: $hopper-green!important;
+}
+
+.subtext-color {
+    color:$text-grey!important;
+}
+
+.header-color {
+    color: white!important;
 }

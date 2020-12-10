@@ -2,6 +2,7 @@
 // brackets mean apply emphasis color
 export default {
 	title: 'about',
+	img: './images/avatar.png',
 	main: [
 		'Hi! I am in my final year at Columbia University studying Computer Science & Operations Research in the engineering school. I develop websites, I build apps, and I tune deep neural networks.',
 		'I am advised by several leading professors in AI: {Shipra Agrawal}, {Hod Lipson}, {Shuran Song}, and {Peter Allen}.',

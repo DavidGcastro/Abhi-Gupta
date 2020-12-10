@@ -9,15 +9,15 @@ const colBuilder = (arr, i) => {
 				pub.link && pub.link.length ? 
 					<a key={i} className='pubTab pointer' href = {pub.link} target='_blank'>
 						<div className='pubTab-top'>
-							<span className='small grey light hopper-green'>{pub.year}</span>
+							<span className='small grey light detail-color'>{pub.year}</span>
 							<span className='p  white  boldish'>{pub.title}</span>
 							<span className='p grey light spacer'>{pub.description}</span>
 						</div>
-						<span className='small grey letter-spacer pubTab-link'>Read more</span>
+						<span className='small link-color letter-spacer pubTab-link'>Read more</span>
 					</a> :
 					<div key={i} className='pubTab removeHoverEvents'>
 						<div className='pubTab-top'>
-							<span className='small grey light hopper-green'>{pub.year}</span>
+							<span className='small grey light detail-color'>{pub.year}</span>
 							<span className='p boldish white'>{pub.title}</span>
 							<span className='p grey light spacer'>{pub.description}</span>
 						</div>
@@ -36,14 +36,14 @@ const Projects = () => {
 						projectsTemplate && projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.link.length ? 		
 							<a href = {projectsTemplate.highlightedPub.link} target='_blank' className ='publications-left'>
 								<div className='publications-highlight'>
-									<span className='small light hopper-green'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.year}</span>
+									<span className='small light detail-color'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.year}</span>
 									<span className='p boldish uppercase textCenter letter-spacer'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.title}</span>
 								</div>
-								<span className='letter-spacer grey small pubTab-link'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.link ? 'Read More' : ''}</span>
+								<span className='letter-spacer link-color small pubTab-link'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.link ? 'Read More' : ''}</span>
 							</a> : 	
 							<div className ='publications-left removeHoverEvents'>
 								<div className='publications-highlight'>
-									<span className='small light hopper-green'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.year}</span>
+									<span className='small light detail-color'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.year}</span>
 									<span className='p boldish textCenter letter-spacer'>{projectsTemplate.highlightedPub && projectsTemplate.highlightedPub.title}</span>
 									<div></div>
 								</div>

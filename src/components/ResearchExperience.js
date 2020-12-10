@@ -17,13 +17,13 @@ class  Research extends Component {
 									<div className='research-text-top'>
 										<span className='light h2 white'>{project.title}</span>
 										<span className='p grey light '>{project.presented}</span>							
-										<span className='small hopper-green light'>{project.additionalDataToHighlight}</span>
+										<span className='small detail-color light'>{project.additionalDataToHighlight}</span>
 										<div style={{marginTop:25}}>
-											<span className='grey light block p'>Contributors</span>
+											<span className='header-color light block p'>Contributors</span>
 											<div className='research-contrib'>
 												{project.contributors && project.contributors.map((contributor, i) => {
 													return (
-														<span className='p pink boldish' key={i}>{contributor}</span>
+														<span className='p emphasis-color boldish' key={i}>{contributor}</span>
 													);
 												})}
 											</div>
@@ -37,7 +37,7 @@ class  Research extends Component {
 									<LazyImage src = {project.img} imageWrapperStyle='research-img-wrapper' imageStyle='image-style'/>
 									<div className='link-container'>
 										{project.links && Object.keys(project.links).map((link, i) => {
-											return <a href={project.links[link]}className='grey letter-spacer p flex-child a' key={i}>{link}</a>;
+											return <a href={project.links[link]}className='letter-spacer p flex-child a link-color' key={i}>{link}</a>;
 										})}
 									</div>	
 										

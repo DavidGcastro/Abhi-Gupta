@@ -24,13 +24,14 @@ const Placeholder = styled.div`
 
 const LazyImage = ({ src, imageWrapperStyle, imageStyle }) => {
 	const refPlaceholder = React.useRef();
+	const refImageWrapper = React.useRef();
 	const removePlaceholder = () => {
 		refPlaceholder.current.remove();
-		document.getElementById('imageWrapper').classList.remove('relative');
+		refImageWrapper.current.classList.remove('relative');
 	};
 
 	return (
-		<div className={`${imageWrapperStyle || ''} relative`} id='imageWrapper'>
+		<div className={`${imageWrapperStyle || ''} relative imageWrapper`} ref={refImageWrapper}>
 			<Placeholder ref={refPlaceholder} />
 			<LazyLoad>
 				<img

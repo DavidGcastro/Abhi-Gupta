@@ -165,7 +165,11 @@ input {
 .active-tab {
    transition: all 200ms ease;
    color: black !important;
-   font-weight: 600 !important;
+   font-weight: 800 !important;
+   &::after{
+   @include underline(black);
+   }
+
 }
 
 .image-style {

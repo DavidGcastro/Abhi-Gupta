@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutTemplate from '../../template/aboutTemplate';
-import avatar from '../../assets/aboutImages/avatar.png';
 import {replacePlaceholders} from '../utils';
+import LazyImage from '../HOC/LazyImage';
 class About extends React.Component {
 	constructor(){
 		super();
@@ -20,24 +20,24 @@ class About extends React.Component {
 				<div className='component-wrapper'>
 					<div className='about-main-parent'>
 						<div className='about-img-wrapper'>
-							<img className='about-img' src={avatar}></img>
+							<LazyImage src = {aboutTemplate.img}  imageStyle='about-img'/>
 						</div>	
 						<div className='about-main-text'>
-							{aboutTemplate && aboutTemplate.main.map((paragraph, i) => {
-								return <span key={i} className='p grey block flex-child spacer' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'pink')}}></span>;
+							{aboutTemplate && aboutTemplate.main && aboutTemplate.main.map((paragraph, i) => {
+								return <span key={i} className='p subtext-color block flex-child spacer' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'emphasis-color')}}></span>;
 							})}
 						</div>
 					</div>
 					<div className='flex-child about-second'>
-						<span className='h2 white block'>{Object.keys(aboutTemplate)[2]}</span>
-						<span className='p grey spacer'>{aboutTemplate[Object.keys(aboutTemplate)[2]]}</span>
+						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[3]}</span>
+						<span className='p subtext-color spacer'>{aboutTemplate[Object.keys(aboutTemplate)[3]]}</span>
 					</div>
 					<div className='about-third flex-child'>
-						<span className='h2 white block'>{Object.keys(aboutTemplate)[3]}</span>
+						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[4]}</span>
 						<div className='flex-child spacer about-topics-container'>
-							{aboutTemplate[Object.keys(aboutTemplate)[3]].map((topic, i) => {
+							{aboutTemplate[Object.keys(aboutTemplate)[4]].map((topic, i) => {
 								return (
-									<span className='p pink flex-child' key={i}>{topic}</span>
+									<span className='p emphasis-color flex-child' key={i}>{topic}</span>
 								);
 							})}
 						</div>

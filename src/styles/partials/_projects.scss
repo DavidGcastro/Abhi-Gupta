@@ -1,0 +1,39 @@
+.projects-parent {
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    grid-gap: 2rem;
+}
+
+.project-cell-parent {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    background: $main-black;
+    border-radius: 10px;
+}
+
+
+.project-cell-parent {
+    div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+}
+
+// hover effect
+.project-cell-parent:hover {
+    @include sm {
+    .project-top {
+        @include hover-effect(10%);
+    }
+    .project-link{ 
+        @include hover-effect(50%);
+         opacity: 0;
+     }   
+}
+}
+    

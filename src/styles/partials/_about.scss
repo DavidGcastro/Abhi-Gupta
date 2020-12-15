@@ -54,5 +54,6 @@
    justify-content: space-between;
    @include md {
       flex-direction: row;
+      max-width: 75%;
    }
 }

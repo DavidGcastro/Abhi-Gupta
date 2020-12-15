@@ -37,7 +37,7 @@ class About extends React.Component {
 						<div className='flex-child spacer about-topics-container'>
 							{aboutTemplate[Object.keys(aboutTemplate)[4]].map((topic, i) => {
 								return (
-									<span className='p emphasis-color flex-child' key={i}>{topic}</span>
+									<span className='p emphasis-color' key={i}>{topic}</span>
 								);
 							})}
 						</div>

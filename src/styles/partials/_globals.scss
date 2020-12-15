@@ -61,14 +61,6 @@ input {
   flex: 1;
 }
 
-.a {
-  transition: all 100ms ease;
-  color: $grey;
-  &:hover {
-    font-weight: 800;
-  }
-}
-
 .component-wrapper {  
   display: flex;
   flex-direction: column;
@@ -128,12 +120,6 @@ input {
 
 .hide {
     transform: translateY(-100%);
-}
-
-.img-wrapper {
-   background: $emphasis-black;
-   padding: 30px;
-   border-radius: 5%;
 }
 
 .block {

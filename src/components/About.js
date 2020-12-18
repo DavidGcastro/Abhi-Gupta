@@ -32,9 +32,9 @@ class About extends React.Component {
 						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[3]}</span>
 						<span className='p subtext-color spacer'>{aboutTemplate[Object.keys(aboutTemplate)[3]]}</span>
 					</div>
-					<div className='about-third flex-child'>
+					<div className='flex-child full-width'>
 						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[4]}</span>
-						<div className='flex-child spacer about-topics-container'>
+						<div className='flex-child spacer about-list-container'>
 							{aboutTemplate[Object.keys(aboutTemplate)[4]].map((topic, i) => {
 								return (
 									<span className='p emphasis-color' key={i}>{topic}</span>
@@ -43,6 +43,21 @@ class About extends React.Component {
 						</div>
 				
 					</div>
+					<div className='flex-child full-width'>
+						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[5]}</span>
+						<div className='flex-child spacer about-list-container'>
+							{
+								Object.keys(aboutTemplate[Object.keys(aboutTemplate)[5]]).map((contact, i) => {
+								
+									return  (
+										<a key={i} target="_blank" className='link-color pointer p' href = {aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}>{contact}</a>
+									);
+								})
+							}
+						</div>
+				
+					</div>
+			
 				</div>
 			</div>
 		);

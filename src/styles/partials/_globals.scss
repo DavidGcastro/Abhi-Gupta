@@ -25,8 +25,12 @@ body {
   justify-content: space-between;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .max-width {
-    max-width: $max-width;
+    max-width: $max-width!important;
     margin: 0 auto;
 }
 * {

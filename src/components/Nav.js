@@ -1,17 +1,19 @@
 import React, {Component}  from 'react';
-
 class Nav extends Component {
 	constructor(){
 		super();
 		this.state = {
 			sections: [],
-			activeTab: null
+			activeTab: null,
+			padHeight: null,
 		};
 		this.handleClick = this.handleClick.bind(this);
+
 	}
 	componentDidMount(){
 		const sections = [...document.getElementsByClassName('component-parent')].map(section => section.id);
 		this.setState({sections});
+
 	}
 	handleClick(e){
 		this.setState({activeTab: e.target.innerText.toLowerCase()});
@@ -20,11 +22,12 @@ class Nav extends Component {
 		const yOffset = -(parseInt(offset) + 20); 
 		const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 		window.scrollTo({top: y, behavior: 'smooth'});
+		// hacky
+		document.getElementsByClassName('hamburger-react')[0].click();
 	}
-
 	render(){
 		return	(
-			<div className='flex-child nav-parent'>
+			<div className={`flex-child ${this.props.isNavVisible? 'nav-parent': 'nav-parent-notVisible'}`} style={{marginTop: this.state.padHeight}}>
 				<div className='nav-link-parent'>
 					{this.state.sections && this.state.sections.length && this.state.sections.map((section, i) => {
 						return (

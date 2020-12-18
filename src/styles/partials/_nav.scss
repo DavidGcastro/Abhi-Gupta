@@ -1,30 +1,49 @@
 .nav-parent {
+  flex: none;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  @include md {
+    flex: 1;
+    width: initial;
+    height: initial;
+    position: initial;
+    min-height: 100%;
+    min-width: 150px;
+    z-index: 0;
+  }
+  &-notVisible {
     display: none;
     @include md {
-        min-height: 100%;
-        background: white;
-        flex:1;
-        min-width: 150px;
-        display: flex;
-        justify-content: center;
-        z-index: 100000000;
+      background: white;
+      position: initial;
+      min-height: 100%;
+      min-width: 150px;
+      display: flex;
+      justify-content: center;
+      z-index: 0;
     }
-  
+  }
 }
 
 .nav-link-parent {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-     height: 100%;
-    justify-content: space-between;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .nav-link-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .nav-link {
@@ -32,5 +51,26 @@
   color: $grey;
   &:hover {
     font-weight: 800;
+  }
+}
+
+.hamburger-react {
+  display: initial !important;
+  z-index: 100000;
+  visibility: visible;
+  @include md {
+    display: none !important;
+  }
+}
+
+.nav-active {
+  background: white !important;
+  z-index: 10 !important;
+  color: white;
+  visibility: hidden;
+  @include md {
+    background: black !important;
+    z-index: 0 !important;
+    visibility: visible;
   }
 }

@@ -11,6 +11,7 @@ module.exports = {
 			patterns: [
 				{ from: path.join(__dirname, './assets/publications'), to: path.join(__dirname, 'dist/publications') },
 				{ from: path.join(__dirname, './assets/images'), to: path.join(__dirname, 'dist/images') },
+				{ from: path.join(__dirname, './assets/contact'), to: path.join(__dirname, 'dist/contact') },
 			],
 		}),
 		new HtmlWebpackPlugin({template: path.resolve('./src/index.html')}),

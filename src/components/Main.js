@@ -7,24 +7,32 @@ import React, {Component}  from 'react';
 import Nav from './Nav';
 import Fixed from './Fixed';
 import Experience from './Experience';
-import Contact from './Contact';
 class Main extends Component {
 	constructor(){
 		super();
 		this.state = {
-			activeTab: 'about'
+			activeTab: 'about',
+			isNavVisible: false
 		};
 		this.setActiveTab = this.setActiveTab.bind(this);
+		this.showNav = this.showNav.bind(this);
 	}
 	setActiveTab(active){
 		this.setState({activeTab: active});
 	}
-	render(){
+	showNav(){
+		this.setState((prevState) => 
+		{
+			return {isNavVisible: !prevState.isNavVisible};
+		}
+		);
+	}
+	render(){ 
 		return (
 			<div className='main-parent'>
 				<div id='global-wrapper'>
 					<div className='main-content padder'>
-						<Fixed/>
+						<Fixed showNav={this.showNav} isNavVisible={this.state.isNavVisible}/>
 						<Section setActiveTab = {this.setActiveTab} tabName='about'>
 							<About/>
 						</Section>
@@ -37,11 +45,8 @@ class Main extends Component {
 						<Section setActiveTab = {this.setActiveTab} tabName='experience'>
 							<Experience/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='contact'>
-							<Contact/>
-						</Section>
 					</div>
-					<Nav activeTab={this.state.activeTab}/>
+					<Nav activeTab={this.state.activeTab} isNavVisible={this.state.isNavVisible}  showNav={this.showNav}/>
 				</div>
 			</div>	
 		);

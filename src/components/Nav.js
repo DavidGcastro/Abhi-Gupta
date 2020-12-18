@@ -27,7 +27,7 @@ class Nav extends Component {
 	}
 	render(){
 		return	(
-			<div className={`flex-child ${this.props.isNavVisible? 'nav-parent': 'nav-parent-notVisible'}`} style={{marginTop: this.state.padHeight}}>
+			<div className={`${this.props.isNavVisible? 'nav-parent': 'nav-parent-notVisible'}`} style={{marginTop: this.state.padHeight}}>
 				<div className='nav-link-parent'>
 					{this.state.sections && this.state.sections.length && this.state.sections.map((section, i) => {
 						return (

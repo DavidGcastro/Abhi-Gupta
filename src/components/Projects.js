@@ -11,8 +11,8 @@ const Projects = () => {
 							<a key={i} className='project-cell-parent pointer' href={project.link}>
 								<div className='project-top'>
 									<span className='small grey light detail-color'>{project.year}</span>
-									<span className='p  white  boldish'>{project.title}</span>
-									<span className='p grey light spacer'>{project.description}</span>
+									<span className='small-header white  boldish'>{project.title}</span>
+									<span className='subtext-color light spacer'>{project.description}</span>
 								</div>
 								<span className='small link-color letter-spacer project-link'>Read more</span>
 							</a> 

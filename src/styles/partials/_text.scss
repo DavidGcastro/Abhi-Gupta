@@ -2,33 +2,43 @@
     display: block;
     font-size: 25px;
     @include md {
-        font-size: 45px;
-
+        font-size: 48px;
     }
 }
 
 .h1{
    font-size: 20px;
    @include lg{
-       font-size: 3vw;
+       font-size: 2vw;
    }
    @include xl{
-       font-size: 35px;
+       font-size: 32px;
    } 
 }
 
 .h2{
-   font-size: 15px;
+   font-size: 16px;
    @include lg{
        font-size: 1.5vw;
    }
    @include xl{
-       font-size: 22px;
+       font-size: 25px;
    } 
 }
 
 
 .p {
+    line-height: 1.85em;
+    font-size: 13px;
+    @include lg {
+        font-size: 1.2vw;
+    }
+    @include xl {
+        font-size: 18px;
+    }
+}
+
+.small-header {
     line-height: 1.85em;
     font-size: 13px;
 }

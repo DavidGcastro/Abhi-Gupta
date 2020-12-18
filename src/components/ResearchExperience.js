@@ -16,7 +16,7 @@ class  Research extends Component {
 								<div className='research-text flex-child'>
 									<div className='research-text-top'>
 										<span className='light h2 white'>{project.title}</span>
-										<span className='p grey light '>{project.presented}</span>							
+										<span className='p subtext-color light '>{project.presented}</span>							
 										<span className='small detail-color light'>{project.additionalDataToHighlight}</span>
 										<div style={{marginTop:25}}>
 											<span className='header-color light block p'>Contributors</span>

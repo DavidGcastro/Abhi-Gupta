@@ -24,13 +24,13 @@ class About extends React.Component {
 						</div>	
 						<div className='about-main-text'>
 							{aboutTemplate && aboutTemplate.main && aboutTemplate.main.map((paragraph, i) => {
-								return <span key={i} className='p subtext-color block flex-child spacer' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'emphasis-color')}}></span>;
+								return <span key={i} className='p  light subtext-color block flex-child spacer' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'emphasis-color')}}></span>;
 							})}
 						</div>
 					</div>
 					<div className='flex-child about-second'>
 						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[3]}</span>
-						<span className='p subtext-color spacer'>{aboutTemplate[Object.keys(aboutTemplate)[3]]}</span>
+						<span className='p subtext-color spacer light'>{aboutTemplate[Object.keys(aboutTemplate)[3]]}</span>
 					</div>
 					<div className='flex-child full-width'>
 						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[4]}</span>
@@ -50,7 +50,7 @@ class About extends React.Component {
 								Object.keys(aboutTemplate[Object.keys(aboutTemplate)[5]]).map((contact, i) => {
 								
 									return  (
-										<a key={i} target="_blank" className='link-color pointer p' href = {aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}>{contact}</a>
+										<a key={i} target="_blank" className='link-color pointer h2 bold spacer' href = {aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}>{contact}</a>
 									);
 								})
 							}

@@ -9,17 +9,21 @@ module.exports = {
 		new webpack.ProgressPlugin(),
 		new CopyPlugin({
 			patterns: [
-				{ from: path.join(__dirname, './assets/publications'), to: path.join(__dirname, 'dist/publications') },
-				{ from: path.join(__dirname, './assets/images'), to: path.join(__dirname, 'dist/images') },
-				{ from: path.join(__dirname, './assets/contact'), to: path.join(__dirname, 'dist/contact') },
+				{ from: path.join(__dirname, './assets/publications'), to: path.join(__dirname, 'root/publications') },
+				{ from: path.join(__dirname, './assets/images'), to: path.join(__dirname, 'root/images') },
+				{ from: path.join(__dirname, './assets/contact'), to: path.join(__dirname, 'root/contact') },
 			],
 		}),
 		new HtmlWebpackPlugin({template: path.resolve('./src/index.html')}),
 	],
 	devServer: {
-		contentBase: path.join(__dirname, 'dist'),
+		contentBase: path.join(__dirname, 'root'),
 		compress: true,
 		port: 9000
+	},
+	output: {
+		path:path.resolve(__dirname, 'root'),
+
 	},
 	module: {
 		rules: [

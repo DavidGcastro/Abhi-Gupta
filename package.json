@@ -4,7 +4,7 @@
   "main": "entry.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "watch": "webpack serve",
+    "watch": "webpack serve --host 0.0.0.0",
     "start:dev": "webpack-dev-server",
     "build": "webpack --mode=production",
     "bundle-report": "webpack-bundle-analyzer --port 4200 stats.json",

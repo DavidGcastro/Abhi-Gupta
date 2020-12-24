@@ -14,22 +14,19 @@ class  Research extends Component {
 						return (
 							<div key={i} className='research-parent flex-child spacer'>
 								<div className='research-text flex-child'>
-									<div className='research-text-top'>
-										<span className='light h2 white'>{project.title}</span>
-										<span className='p subtext-color light '>{project.presented}</span>							
-										<span className='small detail-color light'>{project.additionalDataToHighlight}</span>
-										<div style={{marginTop:25}}>
-											<span className='header-color light block p'>Contributors</span>
-											<div className='research-contrib'>
-												{project.contributors && project.contributors.map((contributor, i) => {
-													return (
-														<span className='p emphasis-color boldish' key={i}>{contributor}</span>
-													);
-												})}
-											</div>
+									<span className='light h2 white'>{project.title}</span>
+									<span className='p subtext-color light '>{project.presented}</span>							
+									<span className='small detail-color light'>{project.additionalDataToHighlight}</span>
+									<div style={{marginTop:25}}>
+										<span className='header-color light block p'>Contributors</span>
+										<div className='research-contrib'>
+											{project.contributors && project.contributors.map((contributor, i) => {
+												return (
+													<span className='p emphasis-color boldish' key={i}>{contributor}</span>
+												);
+											})}
 										</div>
-									</div>
-									
+									</div>	
 								</div>
 							
 								<div className='research-img-container'>
@@ -39,10 +36,8 @@ class  Research extends Component {
 										{project.links && Object.keys(project.links).map((link, i) => {
 											return <a href={project.links[link]}className='letter-spacer p flex-child a link-color' key={i}>{link}</a>;
 										})}
-									</div>	
-										
+									</div>				
 								</div>
-							
 							</div>
 						);
 					})}

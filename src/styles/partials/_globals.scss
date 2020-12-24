@@ -156,10 +156,6 @@ input {
    transition: all 200ms ease;
    color: black !important;
    font-weight: 800 !important;
-   &::after{
-   @include underline(black);
-   }
-
 }
 
 .image-style {

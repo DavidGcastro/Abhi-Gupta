@@ -13,7 +13,7 @@
 
 // Medium devices
 @mixin md {
-  @media (min-width: #{$screen-md-min}) {
+    @media (min-height: #{$screen-sm-min}) and (min-width: #{$screen-md-min}){
     @content;
   }
 }

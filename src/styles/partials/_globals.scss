@@ -45,20 +45,24 @@ input {
 .padder {
    padding: 25px;
    @include lg{
-     padding: 30px;
+     padding: 40px 30px;
    }
-
    @include xl {
      padding: 35px;
    }
 }
 
 .spacer {
-  margin: 25px 0 !important;
+  margin: 20px 0 !important;
+}
+
+.spacer-small {
+  margin: 5px 0 !important;
+
 }
 
 .big-spacer {
-   margin-top: 200px !important;
+   margin: 50px 0 !important;
 }
 
 .flex-child {

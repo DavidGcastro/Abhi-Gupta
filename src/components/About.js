@@ -2,6 +2,10 @@ import React from 'react';
 import aboutTemplate from '../../template/aboutTemplate';
 import {replacePlaceholders} from '../utils';
 import LazyImage from '../HOC/LazyImage';
+import { AiOutlineMail, AiOutlineFileText, AiFillGithub } from 'react-icons/ai';
+import { SiGooglescholar } from 'react-icons/si';
+
+
 class About extends React.Component {
 	constructor(){
 		super();
@@ -21,20 +25,39 @@ class About extends React.Component {
 					<div className='about-main-parent'>
 						<div className='about-img-wrapper'>
 							<LazyImage src = {aboutTemplate.img}  imageStyle='about-img'/>
+							<div className='about-contact'>
+								{
+									Object.keys(aboutTemplate[Object.keys(aboutTemplate)[5]]).map((contact, i) => {
+										if(contact.toLowerCase() === 'email') {
+											return <a href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiOutlineMail  size={30}/></a>;
+										}
+										if(contact.toLowerCase() === 'cv') {
+											return <a href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiOutlineFileText size={30}  /></a>;
+										}
+										if(contact.toLowerCase() === 'github') {
+											return <a href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiFillGithub size={30} /></a>;
+										}
+										else {
+											return <a href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><SiGooglescholar size={30} /></a>;
+
+										}
+									})
+								}
+							</div>
 						</div>	
 						<div className='about-main-text'>
 							{aboutTemplate && aboutTemplate.main && aboutTemplate.main.map((paragraph, i) => {
-								return <span key={i} className='p  light subtext-color block flex-child spacer' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'emphasis-color')}}></span>;
+								return <span key={i} className='p light subtext-color block spacer-small' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'emphasis-color', 'block')}}></span>;
 							})}
 						</div>
 					</div>
-					<div className='flex-child about-second'>
+					<div className='flex-child about-second spacer'>
 						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[3]}</span>
-						<span className='p subtext-color spacer light'>{aboutTemplate[Object.keys(aboutTemplate)[3]]}</span>
+						<span className='p subtext-color spacer-small light'>{aboutTemplate[Object.keys(aboutTemplate)[3]]}</span>
 					</div>
 					<div className='flex-child full-width'>
 						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[4]}</span>
-						<div className='flex-child spacer about-list-container'>
+						<div className='flex-child spacer-small about-list-container'>
 							{aboutTemplate[Object.keys(aboutTemplate)[4]].map((topic, i) => {
 								return (
 									<span className='p emphasis-color' key={i}>{topic}</span>
@@ -43,20 +66,7 @@ class About extends React.Component {
 						</div>
 				
 					</div>
-					<div className='flex-child full-width'>
-						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[5]}</span>
-						<div className='flex-child spacer about-list-container'>
-							{
-								Object.keys(aboutTemplate[Object.keys(aboutTemplate)[5]]).map((contact, i) => {
-								
-									return  (
-										<a key={i} target="_blank" className='link-color pointer h2 bold spacer' href = {aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}>{contact}</a>
-									);
-								})
-							}
-						</div>
-				
-					</div>
+
 			
 				</div>
 			</div>

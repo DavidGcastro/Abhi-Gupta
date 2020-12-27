@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   @include md {
-    flex: 1.15;
+    flex: 1;
     width: initial;
     height: initial;
     position: initial;
@@ -20,7 +20,8 @@
   &-notVisible {
     display: none;
     @include md {
-      flex: 1.15;
+      margin-left: 40px;
+      flex: 1;
       background: white;
       position: initial;
       min-height: 100%;

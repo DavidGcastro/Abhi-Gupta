@@ -2,14 +2,6 @@
     width: auto;
     height: auto;
     border-radius: 10px;
-    @include sm {
-     max-width: 80%
-
-    }
-
-    @include lg {
-
-    }
 }
 
 .research-parent {
@@ -21,18 +13,13 @@
     justify-content: center;
     padding-bottom: 10px;
     @include sm {
-        min-height: 325px;
+        min-height: 350px;
         border: none;
         padding-bottom: 0;
-    }
-
-    @include lg {
-        min-height: 350px;
     }
 }
 
 .research-text {
-    min-width: 169px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,17 +32,17 @@
 }
 
 .research-img-container {
-    flex: 1;
-    // justify-content: center;
-    justify-content: space-between;
-    // @include sm {
-    //     min-width: 50%;
-    //     justify-content: space-between;
-    // }
     display: flex;
-    // min-width: 100%;
     flex-direction: column;
-    @include md {
+    justify-content: space-around;
+    align-items: center;
+    @include sm {
+        margin-right: 40px;
         justify-content: space-between;
+
+    }
+
+    @include lg {
+
     }
 }

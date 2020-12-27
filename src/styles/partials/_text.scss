@@ -56,6 +56,9 @@ a {
 .uppercase{
     text-transform: uppercase !important;
 }
+.lowercase{
+    text-transform: lowercase!important;
+}
 
 
 .bold {
@@ -72,6 +75,10 @@ a {
 
 .letter-spacer {
     letter-spacing: 5px;
+}
+
+.letter-spacer-small {
+    letter-spacing: 2px;
 }
 
 .black {

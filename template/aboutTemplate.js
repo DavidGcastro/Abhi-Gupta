@@ -13,6 +13,7 @@ export default {
 	'Contact': {
 		Email: 'mailto:abhi.gupta@columbia.edu',
 		Github: 'https://github.com/ScrypticLabs',
-		CV: '/contact/Abhi_CV.pdf'
+		CV: '/contact/Abhi_CV.pdf',
+		googleScholar: ''
 	}
 };

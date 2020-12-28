@@ -29,16 +29,16 @@ class About extends React.Component {
 								{
 									Object.keys(aboutTemplate[Object.keys(aboutTemplate)[5]]).map((contact, i) => {
 										if(contact.toLowerCase() === 'email') {
-											return <a href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiOutlineMail  size={30}/></a>;
+											return <a key={i} href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiOutlineMail  size={20}/></a>;
 										}
 										if(contact.toLowerCase() === 'cv') {
-											return <a href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiOutlineFileText size={30}  /></a>;
+											return <a key={i}  href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiOutlineFileText size={20}  /></a>;
 										}
 										if(contact.toLowerCase() === 'github') {
-											return <a href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiFillGithub size={30} /></a>;
+											return <a key={i}  href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiFillGithub size={20} /></a>;
 										}
 										else {
-											return <a href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><SiGooglescholar size={30} /></a>;
+											return <a key={i} href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><SiGooglescholar size={20} /></a>;
 
 										}
 									})
@@ -47,7 +47,7 @@ class About extends React.Component {
 						</div>	
 						<div className='about-main-text'>
 							{aboutTemplate && aboutTemplate.main && aboutTemplate.main.map((paragraph, i) => {
-								return <span key={i} className='p light subtext-color block spacer-small' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'emphasis-color', 'block')}}></span>;
+								return <span key={i} className='p light subtext-color block about-main-p' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'emphasis-color', 'block')}}></span>;
 							})}
 						</div>
 					</div>

@@ -36,13 +36,13 @@ class Main extends Component {
 						<Section setActiveTab = {this.setActiveTab} tabName='about'>
 							<About/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='research'>
+						<Section setActiveTab = {this.setActiveTab} tabName='research' minTopValue = {100}>
 							<Research/>
 						</Section>
 						<Section setActiveTab = {this.setActiveTab} tabName='projects'>
 							<Projects/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='experience'>
+						<Section setActiveTab = {this.setActiveTab} tabName='experience' minTopValue = {400}>
 							<Experience/>
 						</Section>
 					</div>

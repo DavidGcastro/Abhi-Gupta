@@ -4,10 +4,11 @@
    width: auto;
    height: auto;
    border-radius: 10px;
+   margin-bottom: 10px;
 }
 
 .about-main-parent{
-   justify-content: space-between ;
+   justify-content: space-between;
    display: flex;
    flex-wrap: wrap;
    min-width: 100%;
@@ -28,6 +29,12 @@
    }
  }
 
+.about-main-p {
+   margin-top: 10px;
+   @include sm {
+      margin: 0;
+   }
+}
 .about-img-wrapper {
    flex: 1;
    display: flex;
@@ -38,7 +45,7 @@
 }
 
 .about-contact {
-   margin: 10px 0;
+   // margin: 10px 0;
    a {
       display: inline;
       margin-right: 25px;
@@ -65,4 +72,10 @@
       flex-direction: row;
       max-width: 75%;
    }
+}
+
+.about-year {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

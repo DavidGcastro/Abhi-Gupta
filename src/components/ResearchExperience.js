@@ -13,13 +13,13 @@ class  Research extends Component {
 					{
 						Object.keys(researchExperienceTemplate.projects).reverse().map((year, i) => {
 							return (
-								<div key={i}>
+								<div key={i} className='about-year'>
 									<span className='h1 white'>{year}</span>
 									{
 										researchExperienceTemplate.projects[year].map((project, i) => {
 											return (
 												<div key={i} className='research-parent flex-child big-spacer'>
-													<div className='research-text flex-child'>
+													<div className='research-text'>
 														<span className='h2 white'>{project.title}</span>
 														<span className='p subtext-color light '>{project.presented}</span>							
 														<span className='small detail-color light'>{project.additionalDataToHighlight}</span>
@@ -33,7 +33,7 @@ class  Research extends Component {
 															</div>
 														</div>	
 													</div>
-													<div className='research-img-container flex-child'>
+													<div className='research-img-container'>
 														<LazyImage src = {project.img} imageWrapperStyle='research-img-wrapper' imageStyle='image-style'/>
 														<div className='link-container'>
 															{project.links && Object.keys(project.links).map((link, i) => {

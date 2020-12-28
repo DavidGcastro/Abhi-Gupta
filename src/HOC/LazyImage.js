@@ -31,7 +31,7 @@ const LazyImage = ({ src, imageWrapperStyle, imageStyle }) => {
 	};
 
 	return (
-		<div className={`${imageWrapperStyle || ''} relative imageWrapper`} ref={refImageWrapper}>
+		<div className={`${imageWrapperStyle || ''} relative`} ref={refImageWrapper}>
 			<Placeholder ref={refPlaceholder} />
 			<LazyLoad>
 				<img

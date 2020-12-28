@@ -1,4 +1,5 @@
 import React, {Component}  from 'react';
+import scrollToSmoothly from '../../utils/scrollToSmoothly';
 class Nav extends Component {
 	constructor(){
 		super();
@@ -17,11 +18,9 @@ class Nav extends Component {
 	}
 	handleClick(e){
 		this.setState({activeTab: e.target.innerText.toLowerCase()});
-		const offset = getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height;
 		const element = document.getElementById(e.target.innerText.toLowerCase());
-		const yOffset = -(parseInt(offset) + 20); 
-		const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-		window.scrollTo({top: y, behavior: 'smooth'});
+		const fixedHeaderHeightBuffer =	Number(getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height.replace('px', ''));
+		scrollToSmoothly(element.offsetTop - fixedHeaderHeightBuffer < 0 ? fixedHeaderHeightBuffer : element.offsetTop - fixedHeaderHeightBuffer);
 		// hacky
 		document.getElementsByClassName('hamburger-react')[0].click();
 	}

@@ -33,7 +33,7 @@ class Main extends Component {
 				<div id='global-wrapper'>
 					<div className='main-content padder'>
 						<Fixed showNav={this.showNav} isNavVisible={this.state.isNavVisible}/>
-						<Section setActiveTab = {this.setActiveTab} tabName='about'>
+						<Section setActiveTab = {this.setActiveTab} tabName='about' partialVisPos = 'top'>
 							<About/>
 						</Section>
 						<Section setActiveTab = {this.setActiveTab} tabName='research' minTopValue = {100}>

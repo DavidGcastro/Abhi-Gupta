@@ -31,7 +31,7 @@
 
 .about-main-p {
    margin-top: 10px;
-   @include sm {
+   @include md {
       margin: 0;
    }
 }

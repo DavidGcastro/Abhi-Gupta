@@ -17,8 +17,7 @@ class Section extends Component {
 				this.props.setActiveTab(this.props.tabName);
 				if(this.props.tabName !== 'about') {
 					const currentElemInView = document.getElementById(this.props.tabName);
-					const fixedHeaderHeightBuffer =	Number(getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height.replace('px', ''));
-					scrollToSmoothly(currentElemInView.offsetTop - fixedHeaderHeightBuffer < 0 ? fixedHeaderHeightBuffer : currentElemInView.offsetTop - fixedHeaderHeightBuffer);
+					scrollToSmoothly(currentElemInView.offsetTop - this.props.padHeight < 0 ? this.props.padHeight : currentElemInView.offsetTop - this.props.padHeight, null, false);
 				}	
 			}	
 		};
@@ -28,12 +27,10 @@ class Section extends Component {
 		const windowHeight =  window.innerHeight;
 		// ipad pro is 1366
 		let partialVisibilityArg = windowHeight <= 1367;
-		partialVisibilityArg =  this.props.partialVisPos || partialVisibilityArg;
-		console.log('>>>>>>>>', partialVisibilityArg);
 		return (
 			<VizSensor
 				partialVisibility= {partialVisibilityArg}
-				minTopValue = {this.props.minTopValue || 0}
+				minTopValue = {this.props.minTopValue || 50}
 				onChange={(isVisible) => {
 					this.animateOnce(isVisible);
 				}}

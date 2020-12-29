@@ -1,4 +1,4 @@
-function scrollToSmoothly(pos, time) {
+function scrollToSmoothly(pos, time, shouldAnimateScrollUp = true) {
 	/*Time is only applicable for scrolling upwards*/
 	/*pos is the y-position to scroll to (in pixels)*/
 	if (isNaN(pos)) {
@@ -16,7 +16,7 @@ function scrollToSmoothly(pos, time) {
 				window.scrollTo(0, i);
 			}, t / 2);
 		}
-	} else {
+	} else if(shouldAnimateScrollUp) {
 		time = time || 2;
 		var i = currentPos;
 		var x;

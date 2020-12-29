@@ -12,7 +12,8 @@ class Main extends Component {
 		super();
 		this.state = {
 			activeTab: 'about',
-			isNavVisible: false
+			isNavVisible: false,
+			padHeight: 0,
 		};
 		this.setActiveTab = this.setActiveTab.bind(this);
 		this.showNav = this.showNav.bind(this);
@@ -27,22 +28,27 @@ class Main extends Component {
 		}
 		);
 	}
+	componentDidMount(){
+		const fixed = Number(getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height.replace('px', ''));
+		this.setState({padHeight: fixed});	
+	}
 	render(){ 
 		return (
 			<div className='main-parent'>
 				<div id='global-wrapper'>
 					<div className='main-content padder'>
 						<Fixed showNav={this.showNav} isNavVisible={this.state.isNavVisible}/>
-						<Section setActiveTab = {this.setActiveTab} tabName='about' partialVisPos = 'top'>
+						<Section setActiveTab = {this.setActiveTab} tabName='about' partialVisPos = 'top' padHeight={this.state.padHeight}>
 							<About/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='research' minTopValue = {100}>
+						{ /*Setting minTopValue since research top is shown before we adjust the fixed header height buffer*/}
+						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight}>
 							<Research/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='projects'>
+						<Section setActiveTab = {this.setActiveTab} tabName='projects' padHeight={this.state.padHeight}>
 							<Projects/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='experience' minTopValue = {400}>
+						<Section setActiveTab = {this.setActiveTab} tabName='experience' padHeight={this.state.padHeight}>
 							<Experience/>
 						</Section>
 					</div>

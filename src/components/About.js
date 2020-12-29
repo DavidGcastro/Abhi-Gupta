@@ -13,14 +13,9 @@ class About extends React.Component {
 			padHeight: null,
 		};
 	}
-	componentDidMount(){
-		const fixed = getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height;
-		this.setState({padHeight: fixed});	
-	}
-
 	render() {	
 		return (
-			<div className='component-parent' id={aboutTemplate.title.toLowerCase()} style={{marginTop: this.state.padHeight}}>
+			<div className='component-parent' id={aboutTemplate.title.toLowerCase()} style={{marginTop: this.props.padHeight}}>
 				<div className='component-wrapper'>
 					<div className='about-main-parent'>
 						<div className='about-img-wrapper'>

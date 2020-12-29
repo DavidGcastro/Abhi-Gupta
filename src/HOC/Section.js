@@ -26,7 +26,7 @@ class Section extends Component {
 		const {children, ...otherProps} = this.props;
 		const windowHeight =  window.innerHeight;
 		// ipad pro is 1366
-		let partialVisibilityArg = windowHeight <= 1367;
+		let partialVisibilityArg = this.props.partialVisPos || windowHeight <= 1367;
 		return (
 			<VizSensor
 				partialVisibility= {partialVisibilityArg}

@@ -50,7 +50,7 @@ class About extends React.Component {
 						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[3]}</span>
 						<span className='p subtext-color spacer-small light'>{aboutTemplate[Object.keys(aboutTemplate)[3]]}</span>
 					</div>
-					<div className='flex-child full-width'>
+					<div className='flex-child full-width about-third'>
 						<span className='h2 header-color block'>{Object.keys(aboutTemplate)[4]}</span>
 						<div className='about-list-container'>
 							{aboutTemplate[Object.keys(aboutTemplate)[4]].map((topic, i) => {

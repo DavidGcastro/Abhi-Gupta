@@ -37,7 +37,7 @@ class Main extends Component {
 			<div className='main-parent'>
 				<div id='global-wrapper'>
 					<div className='main-content padder'>
-						<Fixed showNav={this.showNav} isNavVisible={this.state.isNavVisible}/>
+						<Fixed showNav={this.showNav} isNavVisible={this.state.isNavVisible} padHeight={this.state.padHeight}/>
 						<Section setActiveTab = {this.setActiveTab} tabName='about' partialVisPos = 'top' padHeight={this.state.padHeight}>
 							<About/>
 						</Section>
@@ -45,12 +45,12 @@ class Main extends Component {
 						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight}>
 							<Research/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='projects' padHeight={this.state.padHeight}>
+						<Section setActiveTab = {this.setActiveTab} tabName='projects' padHeight={this.state.padHeight} partialVisPos='top'>
 							<Projects/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='experience' padHeight={this.state.padHeight}>
+						{/* <Section setActiveTab = {this.setActiveTab} tabName='experience' padHeight={this.state.padHeight}>
 							<Experience/>
-						</Section>
+						</Section> */}
 					</div>
 					<Nav activeTab={this.state.activeTab} isNavVisible={this.state.isNavVisible}  showNav={this.showNav}/>
 				</div>

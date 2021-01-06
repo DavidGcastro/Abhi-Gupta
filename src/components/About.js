@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutTemplate from '../../template/aboutTemplate';
-import {replacePlaceholders} from '../utils';
+import {replacePlaceholders} from '../../utils/replacePlaceholders';
 import LazyImage from '../HOC/LazyImage';
 import { AiOutlineMail, AiOutlineFileText, AiFillGithub } from 'react-icons/ai';
 import { SiGooglescholar } from 'react-icons/si';

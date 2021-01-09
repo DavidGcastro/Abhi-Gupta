@@ -2,7 +2,7 @@
     width: auto;
     height: auto;
     border-radius: 10px;
-    max-width: 400px;
+    // max-width: 400px;
 }
 
 .research-parent {
@@ -10,13 +10,14 @@
     flex-wrap: wrap-reverse;
     border-bottom: 0.25px solid $black;
     flex-direction: row-reverse;
-    min-height: 500px;
+    min-height: 700px;
     justify-content: center;
     padding-bottom: 10px;
     @include sm {
         min-height: 300px;
     }
     @include md {
+        min-height: 350px;
         border: none;
         padding-bottom: 0;
     }

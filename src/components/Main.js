@@ -38,14 +38,14 @@ class Main extends Component {
 				<div id='global-wrapper'>
 					<div className='main-content padder'>
 						<Fixed showNav={this.showNav} isNavVisible={this.state.isNavVisible} padHeight={this.state.padHeight}/>
-						<Section setActiveTab = {this.setActiveTab} tabName='about' padHeight={this.state.padHeight}>
+						<Section setActiveTab = {this.setActiveTab} tabName='about' padHeight={this.state.padHeight} partialVisPos={'top'}>
 							<About/>
 						</Section>
 						{ /*Setting minTopValue since research top is shown before we adjust the fixed header height buffer*/}
 						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight}>
 							<Research/>
 						</Section>
-						<Section setActiveTab = {this.setActiveTab} tabName='projects' padHeight={this.state.padHeight}>
+						<Section setActiveTab = {this.setActiveTab} tabName='projects' padHeight={this.state.padHeight} partialVisPos={true}>
 							<Projects/>
 						</Section>
 						{/* <Section setActiveTab = {this.setActiveTab} tabName='experience' padHeight={this.state.padHeight}>

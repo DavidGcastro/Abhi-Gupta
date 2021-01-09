@@ -17,7 +17,7 @@ class Nav extends Component {
 		window.addEventListener('scroll', this.sync.bind(this), false);
 		window.addEventListener('resize', this.drawPath, false);
 		// hacky
-		setTimeout(this.drawPath, 50);
+		try{setTimeout(this.drawPath, 50);}catch(e){}
 	}
 	handleClick(e){
 		this.setState({activeTab: e.target.innerText.toLowerCase()});
@@ -98,7 +98,11 @@ class Nav extends Component {
 				this.svgPath.setAttribute('opacity', 1);
 			}
 		} else {
-			this.svgPath.setAttribute('opacity', 0);
+			// hacky
+			try{
+				this.svgPath.setAttribute('opacity', 0);
+			}
+			catch(e){}
 		}
 		lastPathStart = pathStart;
 		lastPathEnd = pathEnd;

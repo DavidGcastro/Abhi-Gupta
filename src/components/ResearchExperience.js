@@ -39,8 +39,8 @@ class  Research extends Component {
 															{project.links && Object.keys(project.links).map((link, i) => {
 																return <a href={project.links[link]}className='letter-spacer p a link-color lowercase' key={i}>{link}</a>;
 															})}
-														</div>				
-													</div>
+														</div>	
+													</div>			
 												</div>
 											);
 										})

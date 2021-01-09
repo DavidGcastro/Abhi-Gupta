@@ -25,12 +25,12 @@ export default {
 			title: 'Audiv',
 			description: 'A bot service within Facebook group chats that transcribes speech to text in real-time, enabling the hearing impaired to engage in live conversations.',
 			year: 'Columbia DevFest 2018',
-			link: 'www.github.com/ScrypticLabs/Audiv'
+			link: '//github.com/ScrypticLabs/Audiv'
 		},
 		{
 			title: 'A Decentralized SSH and FTP Protocol',
 			description: 'A command-line interface for collaborating on projects without uploading confidential files over the network to a central server.',
-			link: 'www.github.com/ScrypticLabs/PubNub-Shell',
+			link: '//github.com/ScrypticLabs/PubNub-Shell',
 			year: '2018',
 
 		},
@@ -38,36 +38,36 @@ export default {
 			title: 'Run Bird, Run!',
 			description: 'An iOS game that requires the player to move left or right as a bird to avoid being crushed by falling crates.',
 			year: '2017',
-			link: 'www.github.com/ScrypticLabs/Run-Bird-Run'
+			link: '//github.com/ScrypticLabs/Run-Bird-Run'
 		},
 		{
 			title: 'Watson',
 			description: 'A cellular smart personal assistant that retrieves web-based information exclusively with SMS to answer your most pressing questions.',
 			year: 'Facebook Global Hackathon Finals 2016',
-			link: 'www.github.com/ScrypticLabs/Watson'
+			link: '//github.com/ScrypticLabs/Watson'
 		},
 		{
 			title: 'Gateway',
 			description: 'An iOS messaging application with built-in chat bots for spontaneuous or requested user assistance.',
 			year: 'MHacks 2016',
-			link: 'www.github.com/ScrypticLabs/Gateway'
+			link: '//github.com/ScrypticLabs/Gateway'
 		},
 		{
 			title: 'A Walk-in Medical Clinic Patient Portal',
 			description: 'A portal that can be managed by health administrators and viewed by patients for information like waiting time to see the clinician.',
 			year: '2016',
-			link: 'www.github.com/ScrypticLabs/Wait-Scale',
+			link: '//github.com/ScrypticLabs/Wait-Scale',
 		},
 		{
 			title: 'Recognizing Sign Language with Leap Motion',
 			description: 'A Java Applet for classifying hand gestures as words in sign language using the Leap Motion controller.',
-			link: 'www.github.com/ScrypticLabs/Syne',
+			link: '//github.com/ScrypticLabs/Syne',
 			year: '2015',
 		},
 		{
 			title: 'Eye-Tracking',
 			description: 'A novel communication device for MS, PPMS, and ALS patients that allows them to control their computer\'s operating system with just their eyes.',
-			link: 'www.github.com/ScrypticLabs/iWriter',
+			link: '//github.com/ScrypticLabs/iWriter',
 			year: 'Canada-Wide Science Fair 2014',
 		},
 		{

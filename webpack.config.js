@@ -10,6 +10,7 @@ module.exports = {
 		new CopyPlugin({
 			patterns: [
 				{ from: path.join(__dirname, './assets/publications'), to: path.join(__dirname, 'root/publications') },
+				{ from: path.join(__dirname, './assets/projects'), to: path.join(__dirname, 'root/projects')},
 				{ from: path.join(__dirname, './assets/images'), to: path.join(__dirname, 'root/images') },
 				{ from: path.join(__dirname, './assets/contact'), to: path.join(__dirname, 'root/contact') },
 			],

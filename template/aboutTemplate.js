@@ -4,16 +4,16 @@ export default {
 	title: 'about',
 	img: './images/avatar.png',
 	main: [
-		'Hi! I am in my final year at Columbia University studying Computer Science & Operations Research in the engineering school. I develop websites, I build apps, and I tune deep neural networks.',
-		'I am advised by several leading professors in AI: {Shipra Agrawal}, {Hod Lipson}, {Shuran Song}, and {Peter Allen}.',
-		'In my freetime, I teach robots how to learn, I make buckets from three, and I dominate Settlers of Catan.'
+		'Hi! I am studying {Computer Science & Operations Research} in the engineering school at Columbia University. I train neural networks, I tune hyperparameters, and I teach agents to make intelligent decisions. {I am looking to join a research lab as a PhD student to advance both the theory and application of reinforcement learning.}',
+		'My primary research advisor is {Shipra Agrawal}. I have also worked with {Hod Lipson}, {Shuran Song}, and {Peter Allen}.',
+		'In my freetime, I develop websites, I build apps, and I tinker with robots. You can find me watching ESPN and appreciating the greatness of LeBron James.'
 	],
-	'Research Goals' : 'I aim to leverage reinforcement learning to solve the challenges of real life that cannot be simulated. With a focus on the theory of optimization in sequentialdecision-making, I hope to extend online algorithms to learn from real-world interaction and generalize to all situations, including those that cannot be predetermined',
+	'Research Goals' : 'I aim to leverage reinforcement learning to solve the challenges of real life that cannot be simulated. With a focus on the theory of optimization in sequential decision-making, I hope to extend online algorithms to learn from real-world interaction and generalize to all situations, including those that cannot be predetermined',
 	'Research Topics': ['Reinforcement Learning',  'Discrete Optimization',  'Robotics',  'Computer Vision'],
 	'Contact': {
 		Email: 'mailto:abhi.gupta@columbia.edu',
 		Github: 'https://github.com/ScrypticLabs',
-		CV: '/contact/Abhi_CV.pdf',
-		googleScholar: ''
+		CV: '/contact/Abhi_Gupta_CV.pdf',
+		googleScholar: 'https://scholar.google.com/citations?user=ynyPc1kAAAAJ&hl=en'
 	}
 };

@@ -16,7 +16,7 @@ export default {
 			link: 'TODO'
 		},
 		{
-			title: 'Learning from EMG Synergies to Grasp Objects by Superquadric Representation',
+			title: 'Learning EMG Grasping Synergies',
 			description: 'A dataset of human grasps on a variety of YCB objects, including raw EMG signals and joint angles, for the purposes of building a rich latent space.',
 			year: '2019',
 			link: './projects/EMG_synergies.pdf'

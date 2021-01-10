@@ -4,7 +4,7 @@ export default {
 	title: 'about',
 	img: './images/avatar.png',
 	main: [
-		'Hi! I am studying {Computer Science & Operations Research link=http://www.cs.columbia.edu/ class=emphasis-color inline-text} in the engineering school at Columbia University. I train neural networks, I tune hyperparameters, and I teach agents to make intelligent decisions. {I am looking to join a research lab as a PhD student to advance both the theory and application of reinforcement learning. class=white-emphasis}',
+		'Hi! I am studying {Computer Science & Operations Research link=http://www.cs.columbia.edu/ class=emphasis-color inline-text} in the engineering school at Columbia University. I train neural networks, I tune hyperparameters, and I teach agents to make intelligent decisions. {I am looking to join a research lab as a PhD student to advance both the theory and application of reinforcement learning. class=white-emphasis inline-text}',
 		'My primary research advisor is {Shipra Agrawal link=http://www.columbia.edu/~sa3305/ class=emphasis-color inline-text}. I have also worked with {Hod Lipson link=//hodlipson.com/ class=emphasis-color inline-text}, {Shuran Song link=//cs.columbia.edu/~shurans/ class=emphasis-color inline-text}, and {Peter Allen link=//cs.columbia.edu/~allen/ class=emphasis-color inline-text}.',
 		'In my freetime, I develop websites, I build apps, and I tinker with robots. You can find me watching ESPN and appreciating the greatness of LeBron James.'
 	],

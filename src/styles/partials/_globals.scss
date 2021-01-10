@@ -132,10 +132,17 @@ input {
 .block {
   display: block !important;
 }
+.inline-text {
+  display: inline!important;
+}
 
 .removeHoverEvents {
         pointer-events: none !important;
 
+}
+
+.white-emphasis {
+  color: white!important;
 }
 
 .pointer {

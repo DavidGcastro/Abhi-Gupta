@@ -42,7 +42,7 @@ class About extends React.Component {
 						</div>	
 						<div className='about-main-text'>
 							{aboutTemplate && aboutTemplate.main && aboutTemplate.main.map((paragraph, i) => {
-								return <span key={i} className='p light subtext-color block about-main-p' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span', 'emphasis-color', 'block')}}></span>;
+								return <span key={i} className='p light subtext-color block about-main-p' dangerouslySetInnerHTML={{__html: replacePlaceholders(paragraph, 'span')}}></span>;
 							})}
 						</div>
 					</div>

@@ -17,7 +17,6 @@
         min-height: 300px;
     }
     @include md {
-        min-height: 350px;
         border: none;
         padding-bottom: 0;
     }
@@ -26,7 +25,7 @@
 .research-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex: 1.75;
     min-width: 200px;
 }
@@ -44,7 +43,7 @@
     justify-content: space-evenly;
     min-width: 200px;
     @include sm {
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-right: 30px;
         align-items: center;
     }

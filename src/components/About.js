@@ -14,6 +14,7 @@ class About extends React.Component {
 		};
 	}
 	render() {	
+		console.log(Object.keys(aboutTemplate)[6]);
 		return (
 			<div className='component-parent' id={aboutTemplate.title.toLowerCase()} style={{marginTop: this.props.padHeight}}>
 				<div className='component-wrapper'>
@@ -24,16 +25,16 @@ class About extends React.Component {
 								{
 									Object.keys(aboutTemplate[Object.keys(aboutTemplate)[6]]).map((contact, i) => {
 										if(contact.toLowerCase() === 'email') {
-											return <a key={i} href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiOutlineMail  size={20}/></a>;
+											return <a key={i} href={aboutTemplate[Object.keys(aboutTemplate)[6]][contact]}><AiOutlineMail  size={20}/></a>;
 										}
 										if(contact.toLowerCase() === 'cv') {
-											return <a key={i}  href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiOutlineFileText size={20}  /></a>;
+											return <a key={i}  href={aboutTemplate[Object.keys(aboutTemplate)[6]][contact]}><AiOutlineFileText size={20}  /></a>;
 										}
 										if(contact.toLowerCase() === 'github') {
-											return <a key={i}  href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><AiFillGithub size={20} /></a>;
+											return <a key={i}  href={aboutTemplate[Object.keys(aboutTemplate)[6]][contact]}><AiFillGithub size={20} /></a>;
 										}
 										else {
-											return <a key={i} href={aboutTemplate[Object.keys(aboutTemplate)[5]][contact]}><SiGooglescholar size={20} /></a>;
+											return <a key={i} href={aboutTemplate[Object.keys(aboutTemplate)[6]][contact]}><SiGooglescholar size={20} /></a>;
 
 										}
 									})

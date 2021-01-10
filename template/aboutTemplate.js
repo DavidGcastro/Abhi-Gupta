@@ -1,5 +1,6 @@
 
 // brackets mean apply emphasis color
+// ORDER MATTERS
 export default {
 	title: 'about',
 	img: './images/avatar.png',

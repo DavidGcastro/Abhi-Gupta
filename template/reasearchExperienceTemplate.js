@@ -49,7 +49,7 @@ const obj =  {
 				title: 'SQUIRL: Robust and Efficient Learning from Video Demonstration of Long-Horizon Robotic Manipulation Tasks',
 				contributors: ['Bohan Wu', 'Feng Xu', 'Zhanpeng He', 'Abhi Gupta', 'Peter Allen'],
 				presented: 'IROS 2020',     
-				additionalDataToHighlight: 'Learning complex robotic manipulation skills like pick-pour-place requires a vast amount of real-world experiences. We bypass reward learning by directly recovering a Q-function from combined robot and expert trajectories to solve a related task from a single video demonstration.',
+				additionalDataToHighlight: 'Learning complex robotic manipulation skills like pick-pour-place requires a vast amount of real-world experiences. We directly recover a Q-function to solve a related but new task from only a single video demonstration.',
 				year: '2020',
 				img: './images/squirl.gif',
 				links: {
@@ -59,10 +59,10 @@ const obj =  {
 				},
 			},
 			{
-				title: 'Generative Attention Learning: A \'GenerAL\' Framework for High-Performance Multi-Fingered Grasping in Clutter',
+				title: 'Generative Attention Learning: A Framework for High-Performance Multi-Fingered Grasping in Clutter',
 				contributors: ['Bohan Wu', 'Iretiayo Akinola', 'Abhi Gupta', 'Feng Xu', 'Jacob Varley', 'David Watkins', 'Peter Allen'],
 				presented: 'Autonomous Robots 2020',     
-				additionalDataToHighlight: 'The search space of grasps can be constrained to the point cloud of the scene. As a result, we learn a policy to find high-quality grasps directly in pixel space, closing the sim-to-real gap that would exist if learning motor control instead.',
+				additionalDataToHighlight: 'The search space of grasps is limited to the point cloud of the scene. We learn a policy to find high-quality grasps in pixel space, closing the sim-to-real gap that would exist if learning motor control instead.',
 				year: '2020',
 				img: './images/general.gif',
 				links: {

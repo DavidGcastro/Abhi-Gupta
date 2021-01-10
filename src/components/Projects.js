@@ -8,14 +8,23 @@ const Projects = () => {
 				<div className='projects-parent'>
 					{projectsTemplate.projectsArr && projectsTemplate.projectsArr.map((project, i) => {
 						return (
-							<a key={i} className='project-cell-parent pointer' href={project.link}>
-								<div className='project-top'>
-									<span className='small-header emphasis-color'>{project.year}</span>
-									<span className='p white  boldish'>{project.title}</span>
-									<span className='subtext-color light spacer small-header'>{project.description}</span>
-								</div>
-								<span className='small link-color letter-spacer project-link'>Read more</span>
-							</a> 
+							// handle when no link
+							project.link ? 	
+								<a key={i} className='project-cell-parent pointer' href={project.link}>
+									<div className='project-top'>
+										<span className='small-header emphasis-color'>{project.year}</span>
+										<span className='p white  boldish'>{project.title}</span>
+										<span className='subtext-color light spacer small-header'>{project.description}</span>
+									</div>
+									<span className='small link-color letter-spacer project-link'>Read more</span>
+								</a> : 
+								<div key={i} className='project-cell-parent'>
+									<div>
+										<span className='small-header emphasis-color'>{project.year}</span>
+										<span className='p white  boldish'>{project.title}</span>
+										<span className='subtext-color light spacer small-header'>{project.description}</span>
+									</div>
+								</div> 
 						);
 					})}
 				</div>

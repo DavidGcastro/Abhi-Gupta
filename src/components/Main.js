@@ -31,6 +31,10 @@ class Main extends Component {
 	componentDidMount(){
 		const fixed = Number(getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height.replace('px', ''));
 		this.setState({padHeight: fixed});	
+		window.addEventListener('resize', () => {
+			const fixed = Number(getComputedStyle(document.getElementsByClassName('fixed-parent')[0]).height.replace('px', ''));
+			this.setState({padHeight: fixed});
+		}, false);
 	}
 	render(){ 
 		return (
@@ -42,7 +46,7 @@ class Main extends Component {
 							<About/>
 						</Section>
 						{ /*Setting minTopValue since research top is shown before we adjust the fixed header height buffer*/}
-						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight}>
+						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight} minTopValue={50}>
 							<Research/>
 						</Section>
 						<Section setActiveTab = {this.setActiveTab} tabName='projects' padHeight={this.state.padHeight} partialVisPos={true}>

@@ -2,7 +2,6 @@
     width: auto;
     height: auto;
     border-radius: 10px;
-    // max-width: 400px;
 }
 
 .research-parent {
@@ -25,9 +24,12 @@
 .research-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex: 1.75;
-    min-width: 200px;
+    min-width: 220px;
+    @include lg {
+        justify-content: space-evenly;
+    }
 }
 
 .research-contrib {
@@ -43,9 +45,12 @@
     justify-content: space-evenly;
     min-width: 200px;
     @include sm {
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-right: 30px;
         align-items: center;
+    }
+      @include lg {
+        justify-content: space-evenly;
     }
 }
 
@@ -57,3 +62,5 @@
     align-content: center;
     flex-wrap: wrap;
 }
+
+.about-section-parent {}

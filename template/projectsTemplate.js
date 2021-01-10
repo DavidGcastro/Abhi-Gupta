@@ -6,14 +6,14 @@ export default {
 	highlightedPub : {
 		title: 'Formulating Branch-and-Bound as a Reinforcement Learning Problem',	
 		year: '2020',
-		link: 'google.com',
+		// link: 'google.com',
 	},
 	projectsArr: [
 		{
 			title: 'Reinforcement Learning Playground',
 			description: 'A library of barebones implementations of model-free and model-based algorithms, including REINFORCE, PPO, TRPO, SARSA, DQN, DDQN, ME-TRPO, and MBPO.',
 			year: '2020',
-			link: 'TODO'
+			// link: 'TODO'
 		},
 		{
 			title: 'Learning EMG Grasping Synergies',

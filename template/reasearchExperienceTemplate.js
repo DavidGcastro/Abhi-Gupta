@@ -13,8 +13,8 @@ const obj =  {
 				img: './images/b&b.gif',
 				links: {
 					arXiv: './publications/B&B.pdf',
-					Website: 'TODO',
-					Video: 'TODO'
+					// Website: 'TODO',
+					// Video: 'TODO'
 				},
 			},
 			{
@@ -26,8 +26,8 @@ const obj =  {
 				img: './images/calibration.gif',
 				links: {
 					arXiv: './publications/Calibration.pdf',
-					Website: 'TODO',
-					Video: 'TODO'
+					// Website: 'TODO',
+					// Video: 'TODO'
 				},
 			},
 			{
@@ -39,8 +39,8 @@ const obj =  {
 				img: './images/uncertainty.gif', // TODO
 				links: {
 					arXiv: './publications/Uncertainty.pdf',
-					Website: 'TODO',
-					Video: 'TODO'
+					// Website: 'TODO',
+					// Video: 'TODO'
 				},
 			}
 		],
@@ -55,7 +55,7 @@ const obj =  {
 				links: {
 					arXiv: 'https://arxiv.org/abs/2003.04956',
 					Website: 'http://crlab.cs.columbia.edu/squirl/',
-					Video: 'TODO'
+					// Video: 'TODO'
 				},
 			},
 			{
@@ -81,9 +81,9 @@ const obj =  {
 				year: '2019',
 				img: './images/trackit.gif',
 				links: {
-					arXiv: 'TODO',
+					// arXiv: 'TODO',
 					Website: 'https://medium.com/@asg2233/trackit-9f9c17183838',
-					Video: 'TODO'
+					// Video: 'TODO'
 				}
 			},	
 			{
@@ -95,8 +95,8 @@ const obj =  {
 				img: './images/teleoperation.gif',
 				links: {
 					arXiv: './publications/EMG.pdf',
-					Website: 'TODO',
-					Video: 'TODO'
+					// Website: 'TODO',
+					// Video: 'TODO'
 				}
 			}	
 		]

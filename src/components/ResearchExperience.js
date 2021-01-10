@@ -18,7 +18,7 @@ class  Research extends Component {
 									{
 										researchExperienceTemplate.projects[year].map((project, i) => {
 											return (
-												<div key={i} className='research-parent flex-child spacer'>
+												<div key={i} className='research-parent flex-child spacer-mid'>
 													<div className='research-text'>
 														<span className='h2 white'>{project.title}</span>
 														<span className='p subtext-color light '>{project.presented}</span>							
@@ -35,7 +35,7 @@ class  Research extends Component {
 														<LazyImage src = {project.img} imageWrapperStyle='research-img-wrapper' imageStyle='image-style'/>
 														<div className='link-container'>
 															{project.links && Object.keys(project.links).map((link, i) => {
-																return <a href={project.links[link]}className='letter-spacer p a link-color lowercase' key={i}>{link}</a>;
+																return <a href={project.links[link]}className='letter-spacer p a link-color' key={i}>{link}</a>;
 															})}
 														</div>	
 													</div>			

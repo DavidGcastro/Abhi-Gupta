@@ -23,14 +23,12 @@ class  Research extends Component {
 														<span className='h2 white'>{project.title}</span>
 														<span className='p subtext-color light '>{project.presented}</span>							
 														<span className='h3 subtext-color light' style={{lineHeight: '1.75em'}}>{project.additionalDataToHighlight}</span>
-														<div style={{marginTop:25}}>
-															<div className='research-contrib'>
-																{project.contributors && project.contributors.map((contributor, i) => {
-																	return (
-																		<span className='p emphasis-color' key={i}>{contributor}</span>
-																	);
-																})}
-															</div>
+														<div className='research-contrib'>
+															{project.contributors && project.contributors.map((contributor, i) => {
+																return (
+																	<span className='p emphasis-color' key={i}>{contributor}</span>
+																);
+															})}
 														</div>	
 													</div>
 													<div className='research-img-container'>

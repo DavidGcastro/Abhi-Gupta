@@ -12,9 +12,7 @@ const obj =  {
 				year: '2021',
 				img: './images/b&b.gif',
 				links: {
-					arXiv: './publications/B&B.pdf',
-					// Website: 'TODO',
-					// Video: 'TODO'
+					summary: './research/branchandbound',
 				},
 			},
 			{
@@ -25,9 +23,7 @@ const obj =  {
 				year: '2021',
 				img: './images/calibration.gif',
 				links: {
-					arXiv: './publications/Calibration.pdf',
-					// Website: 'TODO',
-					// Video: 'TODO'
+					summary: './research/robotcalibration',
 				},
 			},
 			{
@@ -36,11 +32,9 @@ const obj =  {
 				presented: 'Working Paper',
 				additionalDataToHighlight: 'Monte-Carlo Tree Search assumes a perfect model of the world, whether known or learned. We use the uncertainty of a probabilistic dynamics model as a way to penalize the return of rollouts simulated during planning, leading to significant gains in performance.',
 				year: '2021',
-				img: './images/uncertainty.gif', // TODO
+				img: './images/uncertainty.gif', 
 				links: {
-					arXiv: './publications/Uncertainty.pdf',
-					// Website: 'TODO',
-					// Video: 'TODO'
+					summary: './research/uncertaintysearch',
 				},
 			}
 		],
@@ -54,8 +48,7 @@ const obj =  {
 				img: './images/squirl.gif',
 				links: {
 					arXiv: 'https://arxiv.org/abs/2003.04956',
-					Website: 'http://crlab.cs.columbia.edu/squirl/',
-					// Video: 'TODO'
+					website: 'http://crlab.cs.columbia.edu/squirl/'
 				},
 			},
 			{
@@ -67,8 +60,8 @@ const obj =  {
 				img: './images/general.gif',
 				links: {
 					arXiv: 'http://web2.cs.columbia.edu/~allen/PAPERS/General_Auro_2020.pdf',
-					Website: 'http://crlab.cs.columbia.edu/GenerAL/',
-					Video: 'https://www.youtube.com/watch?v=GROLYFve9Cc'
+					website: 'http://crlab.cs.columbia.edu/GenerAL/',
+					video: 'https://www.youtube.com/watch?v=GROLYFve9Cc'
 				},
 			}
 		],
@@ -81,9 +74,7 @@ const obj =  {
 				year: '2019',
 				img: './images/trackit.gif',
 				links: {
-					// arXiv: 'TODO',
-					Website: 'https://medium.com/@asg2233/trackit-9f9c17183838',
-					// Video: 'TODO'
+					blog: 'https://medium.com/@asg2233/trackit-9f9c17183838',
 				}
 			},	
 			{
@@ -94,9 +85,7 @@ const obj =  {
 				year: '2019',
 				img: './images/teleoperation.gif',
 				links: {
-					arXiv: './publications/EMG.pdf',
-					// Website: 'TODO',
-					// Video: 'TODO'
+					report: './research/teleoperation',
 				}
 			}	
 		]

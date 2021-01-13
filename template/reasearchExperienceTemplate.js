@@ -12,7 +12,7 @@ const obj =  {
 				year: '2021',
 				img: './images/b&b.gif',
 				links: {
-					summary: './research/branchandbound',
+					summary: './research/branchandbound.pdf',
 				},
 			},
 			{
@@ -23,7 +23,7 @@ const obj =  {
 				year: '2021',
 				img: './images/calibration.gif',
 				links: {
-					summary: './research/robotcalibration',
+					summary: './research/robotcalibration.pdf',
 				},
 			},
 			{
@@ -34,7 +34,7 @@ const obj =  {
 				year: '2021',
 				img: './images/uncertainty.gif', 
 				links: {
-					summary: './research/uncertaintysearch',
+					summary: './research/uncertaintysearch.pdf',
 				},
 			}
 		],
@@ -85,7 +85,7 @@ const obj =  {
 				year: '2019',
 				img: './images/teleoperation.gif',
 				links: {
-					report: './research/teleoperation',
+					report: './research/teleoperation.pdf',
 				}
 			}	
 		]

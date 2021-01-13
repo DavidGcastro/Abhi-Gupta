@@ -46,7 +46,7 @@ class Main extends Component {
 							<About/>
 						</Section>
 						{ /*Setting minTopValue since research top is shown before we adjust the fixed header height buffer*/}
-						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight} minTopValue={50}>
+						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight}>
 							<Research/>
 						</Section>
 						<Section setActiveTab = {this.setActiveTab} tabName='projects' padHeight={this.state.padHeight} partialVisPos={true}>

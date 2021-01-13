@@ -14,6 +14,7 @@ module.exports = {
 				{ from: path.join(__dirname, './assets/images'), to: path.join(__dirname, 'root/images') },
 				{ from: path.join(__dirname, './assets/contact'), to: path.join(__dirname, 'root/contact') },
 				{ from: path.join(__dirname, './assets/research'), to: path.join(__dirname, 'root/research') },
+				{ from: path.join(__dirname, './assets/_redirects'), to: path.join(__dirname, 'root/_redirects.txt') },
 			],
 		}),
 		new HtmlWebpackPlugin({template: path.resolve('./src/index.html')}),

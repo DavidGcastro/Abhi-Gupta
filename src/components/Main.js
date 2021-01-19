@@ -6,7 +6,6 @@ import Research from './ResearchExperience';
 import React, {Component}  from 'react';
 import Nav from './Nav';
 import Fixed from './Fixed';
-import Experience from './Experience';
 class Main extends Component {
 	constructor(){
 		super();
@@ -46,15 +45,12 @@ class Main extends Component {
 							<About/>
 						</Section>
 						{ /*Setting minTopValue since research top is shown before we adjust the fixed header height buffer*/}
-						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight}>
+						<Section setActiveTab = {this.setActiveTab} tabName='research' padHeight={this.state.padHeight} minTopValue={165}>
 							<Research/>
 						</Section>
 						<Section setActiveTab = {this.setActiveTab} tabName='projects' padHeight={this.state.padHeight} partialVisPos={true}>
 							<Projects/>
 						</Section>
-						{/* <Section setActiveTab = {this.setActiveTab} tabName='experience' padHeight={this.state.padHeight}>
-							<Experience/>
-						</Section> */}
 					</div>
 					<Nav activeTab={this.state.activeTab} isNavVisible={this.state.isNavVisible}  showNav={this.showNav}/>
 				</div>
